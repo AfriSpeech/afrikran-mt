@@ -42,11 +42,11 @@ except ImportError:
 sys.path.insert(0, "/mnt/volume_d2wey28/projects/africa-corpus-builder")
 import africa_corpus as ac
 
-PROJECT_DIR = "/mnt/volume_d2wey28/projects/nkrane-africa-gemma"
+PROJECT_DIR = "/mnt/volume_d2wey28/projects/afrikrane-mt"
 DATA_DIR = os.path.join(PROJECT_DIR, "data")
-TRAIN_OUT = os.path.join(DATA_DIR, "train_bracketed")
-VAL_OUT = os.path.join(DATA_DIR, "val_bracketed")
-DICT_OUT = os.path.join(PROJECT_DIR, "dictionaries")
+TRAIN_OUT = os.path.join(DATA_DIR, "train_bracketed_neural")
+VAL_OUT = os.path.join(DATA_DIR, "val_bracketed_neural")
+DICT_OUT = os.path.join(PROJECT_DIR, "dictionaries_neural")
 
 ALIGNER_BIN = "/mnt/volume_d2wey28/projects/afrikrane-mt/.venv/bin/awesome-align"
 DEFAULT_MODEL = os.path.join(PROJECT_DIR, "aligner", "model_final")
