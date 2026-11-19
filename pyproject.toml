@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "afrikrane-mt"
+name = "AfriKrane-MT"
 version = "0.1.0"
 description = "Pan-African Machine Translation across 693 Languages with Preserved Noun Phrasing & Contextual Lexical Disambiguation"
 readme = "README.md"
