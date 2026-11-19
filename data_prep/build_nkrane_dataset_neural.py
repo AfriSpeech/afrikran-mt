@@ -9,14 +9,13 @@ Uses fine-tuned awesome-align (AfriSpeech/afro-awesome-align) on GPU:
 Projects English noun spans into:
 - en -> af: African sentence with <english_noun> in place
 - af -> en: English sentence with <african_noun> in place
-Exports:
-- data/train_bracketed/{code}.parquet
-- data/val_bracketed/{code}.parquet
-- dictionaries/{code}_dictionary.tsv.gz
+Exports & auto-pushes:
+- data/train_bracketed/{code}.parquet -> AfriSpeech/afrikrane-mt: train/{code}.parquet
+- data/val_bracketed/{code}.parquet -> AfriSpeech/afrikrane-mt: val/{code}.parquet
+- dictionaries/{code}_dictionary.tsv.gz -> AfriSpeech/afrikrane-mt: dictionaries/{code}_dictionary.tsv.gz
 """
 
 import argparse
-import csv
 import gzip
 import json
 import os
@@ -25,6 +24,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 from collections import defaultdict
 from typing import Dict, List, Set, Tuple
@@ -32,6 +32,12 @@ from typing import Dict, List, Set, Tuple
 import pyarrow as pa
 import pyarrow.parquet as pq
 import spacy
+
+try:
+    from huggingface_hub import HfApi
+    HF_API = HfApi()
+except ImportError:
+    HF_API = None
 
 sys.path.insert(0, "/mnt/volume_d2wey28/projects/africa-corpus-builder")
 import africa_corpus as ac
@@ -42,14 +48,21 @@ TRAIN_OUT = os.path.join(DATA_DIR, "train_bracketed")
 VAL_OUT = os.path.join(DATA_DIR, "val_bracketed")
 DICT_OUT = os.path.join(PROJECT_DIR, "dictionaries")
 
-ALIGNER_BIN = os.path.join(PROJECT_DIR, ".venv", "bin", "awesome-align")
-DEFAULT_MODEL = os.path.join(PROJECT_DIR, "aligner", "model", "checkpoint-5000")
+ALIGNER_BIN = "/mnt/volume_d2wey28/projects/afrikrane-mt/.venv/bin/awesome-align"
+DEFAULT_MODEL = os.path.join(PROJECT_DIR, "aligner", "model_final")
+DEFAULT_HF_REPO = "AfriSpeech/afrikrane-mt"
 
 os.makedirs(TRAIN_OUT, exist_ok=True)
 os.makedirs(VAL_OUT, exist_ok=True)
 os.makedirs(DICT_OUT, exist_ok=True)
 
-with open(os.path.join(PROJECT_DIR, "african_languages_registry.json"), "r", encoding="utf-8") as f:
+REGISTRY_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "african_languages_registry.json"
+)
+if not os.path.exists(REGISTRY_PATH):
+    REGISTRY_PATH = os.path.join(PROJECT_DIR, "african_languages_registry.json")
+
+with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
     META = json.load(f)
 REGISTRY = META["languages"]
 
@@ -88,12 +101,10 @@ def is_val_key(k: str) -> bool:
     return k.startswith("JHN.1.") or k.startswith("JHN.2.") or k.startswith("JHN.3.") or "#val" in k
 
 def extract_base_noun_chunks(doc) -> Dict[Tuple[int, int], str]:
-    """Finds (start_token_idx, end_token_idx) -> base noun chunk text."""
     res = {}
     for chunk in doc.noun_chunks:
         root = chunk.root
         if len(root.text.strip()) >= 3 and not root.is_stop and root.pos_ in ("NOUN", "PROPN"):
-            # Extract clean noun phrase (strip leading determiners like 'the', 'a', 'this')
             words = [t.text for t in chunk if not (t.is_stop and t != root)]
             phrase = " ".join(words).strip()
             if not phrase:
@@ -101,7 +112,47 @@ def extract_base_noun_chunks(doc) -> Dict[Tuple[int, int], str]:
             res[(chunk.start, chunk.end)] = phrase
     return res
 
-def run_neural_align(model_path: str, pairs: List[Tuple[str, str]], batch_size: int = 128) -> List[str]:
+def async_upload_language(code: str, cname: str, hf_repo: str):
+    """Background upload of Parquet shards and dictionary to Hugging Face."""
+    def _upload():
+        if not HF_API or not hf_repo:
+            return
+        t_path = os.path.join(TRAIN_OUT, f"{code}.parquet")
+        v_path = os.path.join(VAL_OUT, f"{code}.parquet")
+        d_path = os.path.join(DICT_OUT, f"{code}_dictionary.tsv.gz")
+        
+        try:
+            if os.path.exists(t_path):
+                HF_API.upload_file(
+                    path_or_fileobj=t_path,
+                    path_in_repo=f"train/{code}.parquet",
+                    repo_id=hf_repo,
+                    repo_type="dataset",
+                    commit_message=f"Add {cname} ({code}) neural bracketed train shard"
+                )
+            if os.path.exists(v_path):
+                HF_API.upload_file(
+                    path_or_fileobj=v_path,
+                    path_in_repo=f"val/{code}.parquet",
+                    repo_id=hf_repo,
+                    repo_type="dataset",
+                    commit_message=f"Add {cname} ({code}) neural bracketed val shard"
+                )
+            if os.path.exists(d_path):
+                HF_API.upload_file(
+                    path_or_fileobj=d_path,
+                    path_in_repo=f"dictionaries/{code}_dictionary.tsv.gz",
+                    repo_id=hf_repo,
+                    repo_type="dataset",
+                    commit_message=f"Add {cname} ({code}) multi-candidate dictionary"
+                )
+            print(f">> [HF SYNC] {code} ({cname}) auto-pushed to {hf_repo}")
+        except Exception as e:
+            print(f"Warning: HF auto-push failed for {code}: {e}")
+
+    threading.Thread(target=_upload, daemon=True).start()
+
+def run_neural_align(model_path: str, pairs: List[Tuple[str, str]], batch_size: int = 256, num_workers: int = 8) -> List[str]:
     tmp_dir = tempfile.mkdtemp(prefix="awesome_align_")
     in_file = os.path.join(tmp_dir, "input.txt")
     out_file = os.path.join(tmp_dir, "output.align")
@@ -118,6 +169,7 @@ def run_neural_align(model_path: str, pairs: List[Tuple[str, str]], batch_size: 
         "--data_file", in_file,
         "--output_file", out_file,
         "--batch_size", str(batch_size),
+        "--num_workers", str(num_workers),
         "--extraction", "softmax",
         "--align_layer", "8"
     ]
@@ -129,15 +181,24 @@ def run_neural_align(model_path: str, pairs: List[Tuple[str, str]], batch_size: 
     shutil.rmtree(tmp_dir, ignore_errors=True)
     return alignments
 
-def process_language(code: str, model_path: str, nlp, batch_size: int = 128):
+def process_language(code: str, model_path: str, nlp, batch_size: int = 256, hf_repo: Optional[str] = DEFAULT_HF_REPO):
     info = REGISTRY[code]
     cname = info["clean_name"]
     tag = info["tag"]
     
+    train_dest = os.path.join(TRAIN_OUT, f"{code}.parquet")
+    dict_dest = os.path.join(DICT_OUT, f"{code}_dictionary.tsv.gz")
+    if os.path.exists(train_dest) and os.path.exists(dict_dest):
+        try:
+            md = pq.read_metadata(train_dest)
+            if md.num_rows > 0:
+                return code, md.num_rows, 0, 0, "Already completed"
+        except Exception:
+            pass
+
     all_pairs: List[Tuple[str, str, str]] = []
     seen_hashes = set()
     
-    # 1. Pull parallel text
     for repo in ["AfriSpeech/africa-corpus", "AfriSpeech/african-corpus-jw", "AfriSpeech/africa-corpus-journals"]:
         try:
             os.environ["AFRICA_CORPUS_REPO"] = repo
@@ -163,9 +224,8 @@ def process_language(code: str, model_path: str, nlp, batch_size: int = 128):
     if not all_pairs:
         return code, 0, 0, 0, "No pairs extracted"
         
-    # 2. Run Neural awesome-align in GPU batches
     input_pairs = [(e, a) for _, e, a in all_pairs]
-    align_lines = run_neural_align(model_path, input_pairs, batch_size=batch_size)
+    align_lines = run_neural_align(model_path, input_pairs, batch_size=batch_size, num_workers=8)
     
     train_rows = []
     val_rows = []
@@ -206,7 +266,6 @@ def process_language(code: str, model_path: str, nlp, batch_size: int = 128):
             if tj in af_rep:
                 b_str = af_rep[tj]
                 bracketed_af.append(b_str)
-                # Skip duplicate span tokens
                 while tj + 1 in af_rep and af_rep[tj+1] == b_str:
                     tj += 1
                 skip_until = tj
@@ -214,7 +273,6 @@ def process_language(code: str, model_path: str, nlp, batch_size: int = 128):
                 bracketed_af.append(tok)
         final_bracketed_af = " ".join(bracketed_af)
         
-        # Reverse af -> en
         bracketed_en = []
         en_rep = {}
         for en_noun, af_noun in pair_mappings:
@@ -259,13 +317,12 @@ def process_language(code: str, model_path: str, nlp, batch_size: int = 128):
         ("verse", pa.string()),
     ])
     if train_rows:
-        pq.write_table(pa.Table.from_pylist(train_rows, schema=schema), os.path.join(TRAIN_OUT, f"{code}.parquet"), compression="zstd")
+        pq.write_table(pa.Table.from_pylist(train_rows, schema=schema), train_dest, compression="zstd")
     if val_rows:
         pq.write_table(pa.Table.from_pylist(val_rows, schema=schema), os.path.join(VAL_OUT, f"{code}.parquet"), compression="zstd")
         
-    dict_file = os.path.join(DICT_OUT, f"{code}_dictionary.tsv.gz")
     dict_entries = 0
-    with gzip.open(dict_file, "wt", encoding="utf-8") as gf:
+    with gzip.open(dict_dest, "wt", encoding="utf-8") as gf:
         gf.write(f"# English -> {cname} ({code}) Multi-Candidate Lexicon (Neural Aligned)\n")
         for en_w, af_dict in sorted(dict_counts.items()):
             sorted_cands = sorted(af_dict.items(), key=lambda x: -x[1])
@@ -274,22 +331,27 @@ def process_language(code: str, model_path: str, nlp, batch_size: int = 128):
                 gf.write(f"{en_w}\t" + "\t".join(top_cands) + "\n")
                 dict_entries += 1
                 
+    if hf_repo:
+        async_upload_language(code, cname, hf_repo)
+        
     return code, len(train_rows), len(val_rows), dict_entries, None
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", default=DEFAULT_MODEL, help="Path to fine-tuned awesome-align checkpoint")
-    parser.add_argument("--batch-size", type=int, default=128)
+    parser.add_argument("--batch-size", type=int, default=256)
     parser.add_argument("--langs", default=None, help="Comma-separated list of language codes or None for all 693")
+    parser.add_argument("--hf-repo", default=DEFAULT_HF_REPO, help="HF dataset repo for live auto-push")
     args = parser.parse_args()
     
     codes = sorted(REGISTRY.keys())
     if args.langs:
         codes = [c.strip() for c in args.langs.split(",") if c.strip() in REGISTRY]
         
-    print(f"=== Starting Pan-African Neural Nkrane Dataset Generation ===")
+    print(f"=== Starting Pan-African Neural AfriKrane Dataset Generation ===")
     print(f"Model: {args.model}")
     print(f"Total Languages: {len(codes)}")
+    print(f"Hugging Face Live Sync: {args.hf_repo}")
     
     nlp = spacy.load("en_core_web_sm", disable=["ner"])
     t0 = time.time()
@@ -297,9 +359,9 @@ def main():
     
     for i, code in enumerate(codes, 1):
         c_t0 = time.time()
-        c, n_tr, n_val, n_dict, err = process_language(code, args.model, nlp, batch_size=args.batch_size)
+        c, n_tr, n_val, n_dict, err = process_language(code, args.model, nlp, batch_size=args.batch_size, hf_repo=args.hf_repo)
         if err:
-            print(f"[{i}/{len(codes)}] {code}: SKIPPED ({err})")
+            print(f"[{i:3d}/{len(codes)}] {code}: {err}")
         else:
             total_train += n_tr
             total_val += n_val
@@ -309,9 +371,11 @@ def main():
             print(f"[{i:3d}/{len(codes)}] {code} ({REGISTRY[code]['clean_name']}) | Train: {n_tr:,} | Val: {n_val:,} | Dict: {n_dict:,} | {el:.1f}s")
             
     tot_time = time.time() - t0
-    print(f"\nNeural Dataset Generation Complete in {tot_time/60:.1f}m!")
+    print(f"\n==========================================")
+    print(f"Pan-African Neural Generation Complete in {tot_time/60:.1f}m ({tot_time/3600:.1f}h)!")
     print(f"Successful languages: {success}/{len(codes)}")
     print(f"Total Train Turns: {total_train:,} | Total Val Turns: {total_val:,}")
+    print(f"==========================================")
 
 if __name__ == "__main__":
     main()
