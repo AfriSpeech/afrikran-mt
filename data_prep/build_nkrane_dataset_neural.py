@@ -27,7 +27,7 @@ import tempfile
 import threading
 import time
 from collections import defaultdict
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Optional, Set, Tuple
 
 import pyarrow as pa
 import pyarrow.parquet as pq
