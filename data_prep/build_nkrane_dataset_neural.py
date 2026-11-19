@@ -9,10 +9,11 @@ Uses fine-tuned awesome-align (AfriSpeech/afro-awesome-align) on GPU:
 Projects English noun spans into:
 - en -> af: African sentence with <english_noun> in place
 - af -> en: English sentence with <african_noun> in place
-Exports & auto-pushes:
-- data/train_bracketed/{code}.parquet -> AfriSpeech/afrikrane-mt: train/{code}.parquet
-- data/val_bracketed/{code}.parquet -> AfriSpeech/afrikrane-mt: val/{code}.parquet
-- dictionaries/{code}_dictionary.tsv.gz -> AfriSpeech/afrikrane-mt: dictionaries/{code}_dictionary.tsv.gz
+
+Exports & batch-syncs to Hugging Face (every 30 mins to avoid API rate limits):
+- data/train_bracketed_neural/ -> AfriSpeech/afrikrane-mt: train/
+- data/val_bracketed_neural/   -> AfriSpeech/afrikrane-mt: val/
+- dictionaries_neural/         -> AfriSpeech/afrikrane-mt: dictionaries/
 """
 
 import argparse
@@ -49,7 +50,7 @@ VAL_OUT = os.path.join(DATA_DIR, "val_bracketed_neural")
 DICT_OUT = os.path.join(PROJECT_DIR, "dictionaries_neural")
 
 ALIGNER_BIN = "/mnt/volume_d2wey28/projects/afrikrane-mt/.venv/bin/awesome-align"
-DEFAULT_MODEL = os.path.join(PROJECT_DIR, "aligner", "model_final")
+DEFAULT_MODEL = "/mnt/volume_d2wey28/projects/nkrane-africa-gemma/aligner/model_final"
 DEFAULT_HF_REPO = "AfriSpeech/afrikrane-mt"
 
 os.makedirs(TRAIN_OUT, exist_ok=True)
@@ -60,7 +61,7 @@ REGISTRY_PATH = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "african_languages_registry.json"
 )
 if not os.path.exists(REGISTRY_PATH):
-    REGISTRY_PATH = os.path.join(PROJECT_DIR, "african_languages_registry.json")
+    REGISTRY_PATH = os.path.join(PROJECT_DIR, "data", "african_languages_registry.json")
 
 with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
     META = json.load(f)
@@ -112,45 +113,54 @@ def extract_base_noun_chunks(doc) -> Dict[Tuple[int, int], str]:
             res[(chunk.start, chunk.end)] = phrase
     return res
 
-def async_upload_language(code: str, cname: str, hf_repo: str):
-    """Background upload of Parquet shards and dictionary to Hugging Face."""
-    def _upload():
-        if not HF_API or not hf_repo:
-            return
-        t_path = os.path.join(TRAIN_OUT, f"{code}.parquet")
-        v_path = os.path.join(VAL_OUT, f"{code}.parquet")
-        d_path = os.path.join(DICT_OUT, f"{code}_dictionary.tsv.gz")
-        
-        try:
-            if os.path.exists(t_path):
-                HF_API.upload_file(
-                    path_or_fileobj=t_path,
-                    path_in_repo=f"train/{code}.parquet",
-                    repo_id=hf_repo,
-                    repo_type="dataset",
-                    commit_message=f"Add {cname} ({code}) neural bracketed train shard"
-                )
-            if os.path.exists(v_path):
-                HF_API.upload_file(
-                    path_or_fileobj=v_path,
-                    path_in_repo=f"val/{code}.parquet",
-                    repo_id=hf_repo,
-                    repo_type="dataset",
-                    commit_message=f"Add {cname} ({code}) neural bracketed val shard"
-                )
-            if os.path.exists(d_path):
-                HF_API.upload_file(
-                    path_or_fileobj=d_path,
-                    path_in_repo=f"dictionaries/{code}_dictionary.tsv.gz",
-                    repo_id=hf_repo,
-                    repo_type="dataset",
-                    commit_message=f"Add {cname} ({code}) multi-candidate dictionary"
-                )
-            print(f">> [HF SYNC] {code} ({cname}) auto-pushed to {hf_repo}")
-        except Exception as e:
-            print(f"Warning: HF auto-push failed for {code}: {e}")
 
-    threading.Thread(target=_upload, daemon=True).start()
+class PeriodicSyncThread(threading.Thread):
+    """Batches Hugging Face uploads every 30 minutes to respect API rate limits."""
+    def __init__(self, hf_repo: Optional[str], sync_interval_secs: int = 1800):
+        super().__init__(daemon=True)
+        self.hf_repo = hf_repo
+        self.interval = sync_interval_secs
+        self.running = True
+
+    def run(self):
+        while self.running:
+            time.sleep(self.interval)
+            self.sync_now()
+
+    def sync_now(self):
+        if not self.hf_repo or not HF_API:
+            return
+        t0 = time.time()
+        print(f"\n>> [HF BATCH SYNC] Starting periodic batch sync to {self.hf_repo}...", flush=True)
+        try:
+            if os.path.exists(TRAIN_OUT):
+                HF_API.upload_folder(
+                    folder_path=TRAIN_OUT,
+                    path_in_repo="train",
+                    repo_id=self.hf_repo,
+                    repo_type="dataset",
+                    commit_message="Batch sync: neural bracketed train shards"
+                )
+            if os.path.exists(VAL_OUT):
+                HF_API.upload_folder(
+                    folder_path=VAL_OUT,
+                    path_in_repo="val",
+                    repo_id=self.hf_repo,
+                    repo_type="dataset",
+                    commit_message="Batch sync: neural bracketed val shards"
+                )
+            if os.path.exists(DICT_OUT):
+                HF_API.upload_folder(
+                    folder_path=DICT_OUT,
+                    path_in_repo="dictionaries",
+                    repo_id=self.hf_repo,
+                    repo_type="dataset",
+                    commit_message="Batch sync: multi-candidate dictionaries"
+                )
+            print(f">> [HF BATCH SYNC] Successfully synced to {self.hf_repo} in {time.time()-t0:.1f}s!\n", flush=True)
+        except Exception as e:
+            print(f">> [HF BATCH SYNC] Warning: batch sync encountered: {e}\n", flush=True)
+
 
 def run_neural_align(model_path: str, pairs: List[Tuple[str, str]], batch_size: int = 256, num_workers: int = 8) -> List[str]:
     tmp_dir = tempfile.mkdtemp(prefix="awesome_align_")
@@ -181,7 +191,8 @@ def run_neural_align(model_path: str, pairs: List[Tuple[str, str]], batch_size: 
     shutil.rmtree(tmp_dir, ignore_errors=True)
     return alignments
 
-def process_language(code: str, model_path: str, nlp, batch_size: int = 256, hf_repo: Optional[str] = DEFAULT_HF_REPO):
+
+def process_language(code: str, model_path: str, nlp, batch_size: int = 256):
     info = REGISTRY[code]
     cname = info["clean_name"]
     tag = info["tag"]
@@ -331,9 +342,6 @@ def process_language(code: str, model_path: str, nlp, batch_size: int = 256, hf_
                 gf.write(f"{en_w}\t" + "\t".join(top_cands) + "\n")
                 dict_entries += 1
                 
-    if hf_repo:
-        async_upload_language(code, cname, hf_repo)
-        
     return code, len(train_rows), len(val_rows), dict_entries, None
 
 def main():
@@ -342,6 +350,7 @@ def main():
     parser.add_argument("--batch-size", type=int, default=256)
     parser.add_argument("--langs", default=None, help="Comma-separated list of language codes or None for all 693")
     parser.add_argument("--hf-repo", default=DEFAULT_HF_REPO, help="HF dataset repo for live auto-push")
+    parser.add_argument("--sync-interval", type=int, default=1800, help="Sync interval in seconds (default: 1800 = 30 mins)")
     args = parser.parse_args()
     
     codes = sorted(REGISTRY.keys())
@@ -351,25 +360,35 @@ def main():
     print(f"=== Starting Pan-African Neural AfriKrane Dataset Generation ===")
     print(f"Model: {args.model}")
     print(f"Total Languages: {len(codes)}")
-    print(f"Hugging Face Live Sync: {args.hf_repo}")
+    print(f"Hugging Face Batch Sync: {args.hf_repo} (Interval: {args.sync_interval}s / {args.sync_interval/60:.0f}m)")
     
+    # Start periodic batch sync daemon
+    syncer = PeriodicSyncThread(args.hf_repo, sync_interval_secs=args.sync_interval)
+    if args.hf_repo:
+        syncer.start()
+        
     nlp = spacy.load("en_core_web_sm", disable=["ner"])
     t0 = time.time()
     total_train, total_val, total_dicts, success = 0, 0, 0, 0
     
     for i, code in enumerate(codes, 1):
         c_t0 = time.time()
-        c, n_tr, n_val, n_dict, err = process_language(code, args.model, nlp, batch_size=args.batch_size, hf_repo=args.hf_repo)
+        c, n_tr, n_val, n_dict, err = process_language(code, args.model, nlp, batch_size=args.batch_size)
         if err:
-            print(f"[{i:3d}/{len(codes)}] {code}: {err}")
+            print(f"[{i:3d}/{len(codes)}] {code}: {err}", flush=True)
         else:
             total_train += n_tr
             total_val += n_val
             total_dicts += n_dict
             success += 1
             el = time.time() - c_t0
-            print(f"[{i:3d}/{len(codes)}] {code} ({REGISTRY[code]['clean_name']}) | Train: {n_tr:,} | Val: {n_val:,} | Dict: {n_dict:,} | {el:.1f}s")
+            print(f"[{i:3d}/{len(codes)}] {code} ({REGISTRY[code]['clean_name']}) | Train: {n_tr:,} | Val: {n_val:,} | Dict: {n_dict:,} | {el:.1f}s", flush=True)
             
+    # Final flush to HF
+    if args.hf_repo:
+        print("\n>> Performing final batch sync to Hugging Face...", flush=True)
+        syncer.sync_now()
+        
     tot_time = time.time() - t0
     print(f"\n==========================================")
     print(f"Pan-African Neural Generation Complete in {tot_time/60:.1f}m ({tot_time/3600:.1f}h)!")
