@@ -1,0 +1,7192 @@
+{
+  "num_languages": 693,
+  "tokens_added": 601,
+  "languages": {
+    "abr": {
+      "code": "abr",
+      "raw_name": "Abron",
+      "clean_name": "Abron",
+      "tag": "<abr>",
+      "files": [
+        "Abron_abr_v3971.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "abn": {
+      "code": "abn",
+      "raw_name": "Abua",
+      "clean_name": "Abua",
+      "tag": "<abn>",
+      "files": [
+        "Abua_abn_v2632.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgj": {
+      "code": "mgj",
+      "raw_name": "Abureni",
+      "clean_name": "Abureni",
+      "tag": "<mgj>",
+      "files": [
+        "Abureni_mgj_v3381.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ach": {
+      "code": "ach",
+      "raw_name": "Acholi (Acoli)",
+      "clean_name": "Acholi",
+      "tag": "<ach>",
+      "files": [
+        "Acholi_(Acoli)_ach_v559.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "fub": {
+      "code": "fub",
+      "raw_name": "Adamawa Fulfulde / Fulfulde (Adamawa)",
+      "clean_name": "Adamawa Fulfulde",
+      "tag": "<fub>",
+      "files": [
+        "Adamawa_Fulfulde_fub_v1707.csv",
+        "Fulfulde_(Adamawa)_fub_v905.csv",
+        "Fulfulde_(Adamawa)_fub_v906.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ada": {
+      "code": "ada",
+      "raw_name": "Adangme",
+      "clean_name": "Adangme",
+      "tag": "<ada>",
+      "files": [
+        "Adangme_ada_v2265.csv",
+        "Adangme_ada_v2322.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "adh": {
+      "code": "adh",
+      "raw_name": "Adhola",
+      "clean_name": "Adhola",
+      "tag": "<adh>",
+      "files": [
+        "Adhola_adh_v2185.csv",
+        "Adhola_adh_v2186.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "adj": {
+      "code": "adj",
+      "raw_name": "Adioukrou",
+      "clean_name": "Adioukrou",
+      "tag": "<adj>",
+      "files": [
+        "Adioukrou_adj_v1462.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "afr": {
+      "code": "afr",
+      "raw_name": "Afrikaans",
+      "clean_name": "Afrikaans",
+      "tag": "<afr>",
+      "files": [
+        "Afrikaans_afr_v117.csv",
+        "Afrikaans_afr_v2.csv",
+        "Afrikaans_afr_v3499.csv",
+        "Afrikaans_afr_v3660.csv",
+        "Afrikaans_afr_v4384.csv",
+        "Afrikaans_afr_v4401.csv",
+        "Afrikaans_afr_v5.csv",
+        "Afrikaans_afr_v50.csv",
+        "Afrikaans_afr_v6.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "agq": {
+      "code": "agq",
+      "raw_name": "Aghem",
+      "clean_name": "Aghem",
+      "tag": "<agq>",
+      "files": [
+        "Aghem_agq_v2620.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "afo": {
+      "code": "afo",
+      "raw_name": "Ajiri",
+      "clean_name": "Ajiri",
+      "tag": "<afo>",
+      "files": [
+        "Ajiri_afo_v4444.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "idc": {
+      "code": "idc",
+      "raw_name": "Ajiya",
+      "clean_name": "Ajiya",
+      "tag": "<idc>",
+      "files": [
+        "Ajiya_idc_v4255.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "aka": {
+      "code": "aka",
+      "raw_name": "Akan",
+      "clean_name": "Akan",
+      "tag": "<aka>",
+      "files": [
+        "Akan_aka_v2094.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bss": {
+      "code": "bss",
+      "raw_name": "Akoose",
+      "clean_name": "Akoose",
+      "tag": "<bss>",
+      "files": [
+        "Akoose_bss_v336.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "alw": {
+      "code": "alw",
+      "raw_name": "Alaba-K’abeena",
+      "clean_name": "Alaba-K’abeena",
+      "tag": "<alw>",
+      "files": [
+        "Alaba-K’abeena_alw_v4138.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ala": {
+      "code": "ala",
+      "raw_name": "Alago",
+      "clean_name": "Alago",
+      "tag": "<ala>",
+      "files": [
+        "Alago_ala_v4445.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ald": {
+      "code": "ald",
+      "raw_name": "Alladian",
+      "clean_name": "Alladian",
+      "tag": "<ald>",
+      "files": [
+        "Alladian_ald_v1487.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "aab": {
+      "code": "aab",
+      "raw_name": "Alumu-Tesu",
+      "clean_name": "Alumu-Tesu",
+      "tag": "<aab>",
+      "files": [
+        "Alumu-Tesu_aab_v4443.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "alz": {
+      "code": "alz",
+      "raw_name": "Alur",
+      "clean_name": "Alur",
+      "tag": "<alz>",
+      "files": [
+        "Alur_alz_v2916.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "rwm": {
+      "code": "rwm",
+      "raw_name": "Amba",
+      "clean_name": "Amba",
+      "tag": "<rwm>",
+      "files": [
+        "Amba_rwm_v4356.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "amh": {
+      "code": "amh",
+      "raw_name": "Amharic",
+      "clean_name": "Amharic",
+      "tag": "<amh>",
+      "files": [
+        "Amharic_amh_v1260.csv",
+        "Amharic_amh_v3198.csv",
+        "Amharic_amh_v3199.csv",
+        "Amharic_amh_v3200.csv",
+        "Amharic_amh_v3867.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "anu": {
+      "code": "anu",
+      "raw_name": "Anuak",
+      "clean_name": "Anuak",
+      "tag": "<anu>",
+      "files": [
+        "Anuak_anu_v3201.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cko": {
+      "code": "cko",
+      "raw_name": "Anufo",
+      "clean_name": "Anufo",
+      "tag": "<cko>",
+      "files": [
+        "Anufo_cko_v2168.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "any": {
+      "code": "any",
+      "raw_name": "Anyin",
+      "clean_name": "Anyin",
+      "tag": "<any>",
+      "files": [
+        "Anyin_any_v1731.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "arq": {
+      "code": "arq",
+      "raw_name": "Arabic, Algerian",
+      "clean_name": "Arabic, Algerian",
+      "tag": "<arq>",
+      "files": [
+        "Arabic,_Algerian_arq_v3193.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "apd": {
+      "code": "apd",
+      "raw_name": "Arabic, Sudanese (Latin)",
+      "clean_name": "Arabic, Sudanese",
+      "tag": "<apd>",
+      "files": [
+        "Arabic,_Sudanese_(Latin)_apd_v3401.csv",
+        "Arabic,_Sudanese_apd_v4090.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "luc": {
+      "code": "luc",
+      "raw_name": "Aringa",
+      "clean_name": "Aringa",
+      "tag": "<luc>",
+      "files": [
+        "Aringa_luc_v2341.csv",
+        "Aringa_luc_v3887.csv",
+        "Aringa_luc_v4377.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "asa": {
+      "code": "asa",
+      "raw_name": "Asu (Tanzania)",
+      "clean_name": "Asu",
+      "tag": "<asa>",
+      "files": [
+        "Asu_(Tanzania)_asa_v3036.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "auh": {
+      "code": "auh",
+      "raw_name": "Aushi",
+      "clean_name": "Aushi",
+      "tag": "<auh>",
+      "files": [
+        "Aushi_auh_v4447.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "avn": {
+      "code": "avn",
+      "raw_name": "Avatime",
+      "clean_name": "Avatime",
+      "tag": "<avn>",
+      "files": [
+        "Avatime_avn_v1982.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "avu": {
+      "code": "avu",
+      "raw_name": "Avokaya",
+      "clean_name": "Avokaya",
+      "tag": "<avu>",
+      "files": [
+        "Avokaya_avu_v1766.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "azo": {
+      "code": "azo",
+      "raw_name": "Awing",
+      "clean_name": "Awing",
+      "tag": "<azo>",
+      "files": [
+        "Awing_azo_v3005.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bba": {
+      "code": "bba",
+      "raw_name": "Baatonum",
+      "clean_name": "Baatonum",
+      "tag": "<bba>",
+      "files": [
+        "Baatonum_bba_v1138.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bbk": {
+      "code": "bbk",
+      "raw_name": "Babanki",
+      "clean_name": "Babanki",
+      "tag": "<bbk>",
+      "files": [
+        "Babanki_bbk_v1983.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bcy": {
+      "code": "bcy",
+      "raw_name": "Bacama",
+      "clean_name": "Bacama",
+      "tag": "<bcy>",
+      "files": [
+        "Bacama_bcy_v3705.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bwt": {
+      "code": "bwt",
+      "raw_name": "Bafaw-Balong",
+      "clean_name": "Bafaw-Balong",
+      "tag": "<bwt>",
+      "files": [
+        "Bafaw-Balong_bwt_v4719.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ksf": {
+      "code": "ksf",
+      "raw_name": "Bafia",
+      "clean_name": "Bafia",
+      "tag": "<ksf>",
+      "files": [
+        "Bafia_ksf_v876.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bfd": {
+      "code": "bfd",
+      "raw_name": "Bafut",
+      "clean_name": "Bafut",
+      "tag": "<bfd>",
+      "files": [
+        "Bafut_bfd_v2147.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bsp": {
+      "code": "bsp",
+      "raw_name": "Baga Sitemu",
+      "clean_name": "Baga Sitemu",
+      "tag": "<bsp>",
+      "files": [
+        "Baga_Sitemu_bsp_v1557.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bsw": {
+      "code": "bsw",
+      "raw_name": "Baiso",
+      "clean_name": "Baiso",
+      "tag": "<bsw>",
+      "files": [
+        "Baiso_bsw_v4064.csv",
+        "Baiso_bsw_v4068.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bdh": {
+      "code": "bdh",
+      "raw_name": "Baka (Sudan)",
+      "clean_name": "Baka",
+      "tag": "<bdh>",
+      "files": [
+        "Baka_(Sudan)_bdh_v1563.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bkh": {
+      "code": "bkh",
+      "raw_name": "Bakoko",
+      "clean_name": "Bakoko",
+      "tag": "<bkh>",
+      "files": [
+        "Bakoko_bkh_v3330.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bjw": {
+      "code": "bjw",
+      "raw_name": "Bakwé",
+      "clean_name": "Bakwé",
+      "tag": "<bjw>",
+      "files": [
+        "Bakwé_bjw_v4150.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bcn": {
+      "code": "bcn",
+      "raw_name": "Bali (Nigeria)",
+      "clean_name": "Bali",
+      "tag": "<bcn>",
+      "files": [
+        "Bali_(Nigeria)_bcn_v2513.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bmo": {
+      "code": "bmo",
+      "raw_name": "Bambalang",
+      "clean_name": "Bambalang",
+      "tag": "<bmo>",
+      "files": [
+        "Bambalang_bmo_v2348.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bvm": {
+      "code": "bvm",
+      "raw_name": "Bamunka",
+      "clean_name": "Bamunka",
+      "tag": "<bvm>",
+      "files": [
+        "Bamunka_bvm_v4363.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bcw": {
+      "code": "bcw",
+      "raw_name": "Bana",
+      "clean_name": "Bana",
+      "tag": "<bcw>",
+      "files": [
+        "Bana_bcw_v1767.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lnl": {
+      "code": "lnl",
+      "raw_name": "Banda, South Central",
+      "clean_name": "Banda, South Central",
+      "tag": "<lnl>",
+      "files": [
+        "Banda,_South_Central_lnl_v3068.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "liy": {
+      "code": "liy",
+      "raw_name": "Banda-Bambari",
+      "clean_name": "Banda-Bambari",
+      "tag": "<liy>",
+      "files": [
+        "Banda-Bambari_liy_v4561.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bza": {
+      "code": "bza",
+      "raw_name": "Bandi",
+      "clean_name": "Bandi",
+      "tag": "<bza>",
+      "files": [
+        "Bandi_bza_v2827.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bqj": {
+      "code": "bqj",
+      "raw_name": "Bandial",
+      "clean_name": "Bandial",
+      "tag": "<bqj>",
+      "files": [
+        "Bandial_bqj_v1300.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bni": {
+      "code": "bni",
+      "raw_name": "Bangi",
+      "clean_name": "Bangi",
+      "tag": "<bni>",
+      "files": [
+        "Bangi_bni_v3431.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bci": {
+      "code": "bci",
+      "raw_name": "Baoulé",
+      "clean_name": "Baoulé",
+      "tag": "<bci>",
+      "files": [
+        "Baoulé_bci_v1643.csv",
+        "Baoulé_bci_v3080.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "bfa": {
+      "code": "bfa",
+      "raw_name": "Bari",
+      "clean_name": "Bari",
+      "tag": "<bfa>",
+      "files": [
+        "Bari_bfa_v2666.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bzw": {
+      "code": "bzw",
+      "raw_name": "Basa",
+      "clean_name": "Basa",
+      "tag": "<bzw>",
+      "files": [
+        "Basa_bzw_v2631.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "buj": {
+      "code": "buj",
+      "raw_name": "Basa-Gurmana",
+      "clean_name": "Basa-Gurmana",
+      "tag": "<buj>",
+      "files": [
+        "Basa-Gurmana_buj_v4402.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bst": {
+      "code": "bst",
+      "raw_name": "Basketo",
+      "clean_name": "Basketo",
+      "tag": "<bst>",
+      "files": [
+        "Basketo_bst_v3171.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bsq": {
+      "code": "bsq",
+      "raw_name": "Bassa",
+      "clean_name": "Bassa",
+      "tag": "<bsq>",
+      "files": [
+        "Bassa_bsq_v2826.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bej": {
+      "code": "bej",
+      "raw_name": "Bedawiyet",
+      "clean_name": "Bedawiyet",
+      "tag": "<bej>",
+      "files": [
+        "Bedawiyet_bej_v4672.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bjv": {
+      "code": "bjv",
+      "raw_name": "Bedjond",
+      "clean_name": "Bedjond",
+      "tag": "<bjv>",
+      "files": [
+        "Bedjond_bjv_v1445.csv",
+        "Bedjond_bjv_v331.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "beq": {
+      "code": "beq",
+      "raw_name": "Beembe (Congo)",
+      "clean_name": "Beembe",
+      "tag": "<beq>",
+      "files": [
+        "Beembe_(Congo)_beq_v4757.csv",
+        "Beembe_(Congo)_beq_v812.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bkv": {
+      "code": "bkv",
+      "raw_name": "Bekwarra",
+      "clean_name": "Bekwarra",
+      "tag": "<bkv>",
+      "files": [
+        "Bekwarra_bkv_v3972.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bkw": {
+      "code": "bkw",
+      "raw_name": "Bekwel",
+      "clean_name": "Bekwel",
+      "tag": "<bkw>",
+      "files": [
+        "Bekwel_bkw_v3501.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bem": {
+      "code": "bem",
+      "raw_name": "Bemba (Zambia)",
+      "clean_name": "Bemba",
+      "tag": "<bem>",
+      "files": [
+        "Bemba_(Zambia)_bem_v1097.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "bez": {
+      "code": "bez",
+      "raw_name": "Bena (Tanzania)",
+      "clean_name": "Bena",
+      "tag": "<bez>",
+      "files": [
+        "Bena_(Tanzania)_bez_v3037.csv",
+        "Bena_(Tanzania)_bez_v3349.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "egm": {
+      "code": "egm",
+      "raw_name": "Benemanga",
+      "clean_name": "Benemanga",
+      "tag": "<egm>",
+      "files": [
+        "Benemanga_egm_v4455.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bom": {
+      "code": "bom",
+      "raw_name": "Berom",
+      "clean_name": "Berom",
+      "tag": "<bom>",
+      "files": [
+        "Berom_bom_v1591.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "btt": {
+      "code": "btt",
+      "raw_name": "Bete-Bendi",
+      "clean_name": "Bete-Bendi",
+      "tag": "<btt>",
+      "files": [
+        "Bete-Bendi_btt_v4546.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bim": {
+      "code": "bim",
+      "raw_name": "Bimoba",
+      "clean_name": "Bimoba",
+      "tag": "<bim>",
+      "files": [
+        "Bimoba_bim_v1748.csv",
+        "Bimoba_bim_v1838.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bfo": {
+      "code": "bfo",
+      "raw_name": "Birifor, Malba",
+      "clean_name": "Birifor, Malba",
+      "tag": "<bfo>",
+      "files": [
+        "Birifor,_Malba_bfo_v3052.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bib": {
+      "code": "bib",
+      "raw_name": "Bissa",
+      "clean_name": "Bissa",
+      "tag": "<bib>",
+      "files": [
+        "Bissa_bib_v1751.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bqc": {
+      "code": "bqc",
+      "raw_name": "Boko (Benin)",
+      "clean_name": "Boko",
+      "tag": "<bqc>",
+      "files": [
+        "Boko_(Benin)_bqc_v1155.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bus": {
+      "code": "bus",
+      "raw_name": "Bokobaru",
+      "clean_name": "Bokobaru",
+      "tag": "<bus>",
+      "files": [
+        "Bokobaru_bus_v3085.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bky": {
+      "code": "bky",
+      "raw_name": "Bokyi",
+      "clean_name": "Bokyi",
+      "tag": "<bky>",
+      "files": [
+        "Bokyi_bky_v3077.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bou": {
+      "code": "bou",
+      "raw_name": "Bondei",
+      "clean_name": "Bondei",
+      "tag": "<bou>",
+      "files": [
+        "Bondei_bou_v4372.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bui": {
+      "code": "bui",
+      "raw_name": "Bongili",
+      "clean_name": "Bongili",
+      "tag": "<bui>",
+      "files": [
+        "Bongili_bui_v3816.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bwo": {
+      "code": "bwo",
+      "raw_name": "Borna",
+      "clean_name": "Borna",
+      "tag": "<bwo>",
+      "files": [
+        "Borna_bwo_v3252.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jid": {
+      "code": "jid",
+      "raw_name": "Bu (Kaduna State)",
+      "clean_name": "Bu",
+      "tag": "<jid>",
+      "files": [
+        "Bu_(Kaduna_State)_jid_v4464.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "box": {
+      "code": "box",
+      "raw_name": "Buamu",
+      "clean_name": "Buamu",
+      "tag": "<box>",
+      "files": [
+        "Buamu_box_v381.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "buu": {
+      "code": "buu",
+      "raw_name": "Budu",
+      "clean_name": "Budu",
+      "tag": "<buu>",
+      "files": [
+        "Budu_buu_v3507.csv",
+        "Budu_buu_v3919.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ked": {
+      "code": "ked",
+      "raw_name": "Bukerebe (Kerebe)",
+      "clean_name": "Bukerebe",
+      "tag": "<ked>",
+      "files": [
+        "Bukerebe_(Kerebe)_ked_v3282.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bxk": {
+      "code": "bxk",
+      "raw_name": "Bukusu",
+      "clean_name": "Bukusu",
+      "tag": "<bxk>",
+      "files": [
+        "Bukusu_bxk_v2654.csv",
+        "Bukusu_bxk_v2658.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bwu": {
+      "code": "bwu",
+      "raw_name": "Buli (Ghana)",
+      "clean_name": "Buli",
+      "tag": "<bwu>",
+      "files": [
+        "Buli_(Ghana)_bwu_v2176.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "buy": {
+      "code": "buy",
+      "raw_name": "Bullom So",
+      "clean_name": "Bullom So",
+      "tag": "<buy>",
+      "files": [
+        "Bullom_So_buy_v2586.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bum": {
+      "code": "bum",
+      "raw_name": "Bulu (Cameroon)",
+      "clean_name": "Bulu",
+      "tag": "<bum>",
+      "files": [
+        "Bulu_(Cameroon)_bum_v3293.csv",
+        "Bulu_(Cameroon)_bum_v856.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "bmv": {
+      "code": "bmv",
+      "raw_name": "Bum",
+      "clean_name": "Bum",
+      "tag": "<bmv>",
+      "files": [
+        "Bum_bmv_v2175.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bwr": {
+      "code": "bwr",
+      "raw_name": "Bura-Pabir",
+      "clean_name": "Bura-Pabir",
+      "tag": "<bwr>",
+      "files": [
+        "Bura-Pabir_bwr_v2536.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ffm": {
+      "code": "ffm",
+      "raw_name": "Burkina Faso Fulfulde / Maasina Fulfulde",
+      "clean_name": "Burkina Faso Fulfulde",
+      "tag": "<ffm>",
+      "files": [
+        "Burkina_Faso_Fulfulde_ffm_v1032.csv",
+        "Maasina_Fulfulde_ffm_v1175.csv",
+        "Maasina_Fulfulde_ffm_v3093.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bds": {
+      "code": "bds",
+      "raw_name": "Burunge",
+      "clean_name": "Burunge",
+      "tag": "<bds>",
+      "files": [
+        "Burunge_bds_v2304.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bqp": {
+      "code": "bqp",
+      "raw_name": "Busa",
+      "clean_name": "Busa",
+      "tag": "<bqp>",
+      "files": [
+        "Busa_bqp_v3084.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bhs": {
+      "code": "bhs",
+      "raw_name": "Buwal",
+      "clean_name": "Buwal",
+      "tag": "<bhs>",
+      "files": [
+        "Buwal_bhs_v4515.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bwj": {
+      "code": "bwj",
+      "raw_name": "Bwamu, Láá Láá",
+      "clean_name": "Bwamu, Láá Láá",
+      "tag": "<bwj>",
+      "files": [
+        "Bwamu,_Láá_Láá_bwj_v3692.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bwc": {
+      "code": "bwc",
+      "raw_name": "Bwile",
+      "clean_name": "Bwile",
+      "tag": "<bwc>",
+      "files": [
+        "Bwile_bwc_v4373.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bev": {
+      "code": "bev",
+      "raw_name": "Bété, Daloa",
+      "clean_name": "Bété, Daloa",
+      "tag": "<bev>",
+      "files": [
+        "Bété,_Daloa_bev_v4606.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "btg": {
+      "code": "btg",
+      "raw_name": "Bété, Gagnoa",
+      "clean_name": "Bété, Gagnoa",
+      "tag": "<btg>",
+      "files": [
+        "Bété,_Gagnoa_btg_v3837.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bet": {
+      "code": "bet",
+      "raw_name": "Bété, Guiberoua",
+      "clean_name": "Bété, Guiberoua",
+      "tag": "<bet>",
+      "files": [
+        "Bété,_Guiberoua_bet_v3284.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bng": {
+      "code": "bng",
+      "raw_name": "Bɛŋga",
+      "clean_name": "Bɛŋga",
+      "tag": "<bng>",
+      "files": [
+        "Bɛŋga_bng_v3862.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cky": {
+      "code": "cky",
+      "raw_name": "Cakfem-Mushere",
+      "clean_name": "Cakfem-Mushere",
+      "tag": "<cky>",
+      "files": [
+        "Cakfem-Mushere_cky_v3529.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mcu": {
+      "code": "mcu",
+      "raw_name": "Cameroon Mambila",
+      "clean_name": "Cameroon Mambila",
+      "tag": "<mcu>",
+      "files": [
+        "Cameroon_Mambila_mcu_v2226.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cme": {
+      "code": "cme",
+      "raw_name": "Cerma",
+      "clean_name": "Cerma",
+      "tag": "<cme>",
+      "files": [
+        "Cerma_cme_v379.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "shu": {
+      "code": "shu",
+      "raw_name": "Chadian Arabic (Roman script)",
+      "clean_name": "Chadian Arabic",
+      "tag": "<shu>",
+      "files": [
+        "Chadian_Arabic_(Roman_script)_shu_v501.csv",
+        "Chadian_Arabic_shu_v502.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cll": {
+      "code": "cll",
+      "raw_name": "Chala",
+      "clean_name": "Chala",
+      "tag": "<cll>",
+      "files": [
+        "Chala_cll_v4666.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dig": {
+      "code": "dig",
+      "raw_name": "Chidigo",
+      "clean_name": "Chidigo",
+      "tag": "<dig>",
+      "files": [
+        "Chidigo_dig_v2711.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cjk": {
+      "code": "cjk",
+      "raw_name": "Chokwe",
+      "clean_name": "Chokwe",
+      "tag": "<cjk>",
+      "files": [
+        "Chokwe_cjk_v2546.csv",
+        "Chokwe_cjk_v3434.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "cce": {
+      "code": "cce",
+      "raw_name": "Chopi",
+      "clean_name": "Chopi",
+      "tag": "<cce>",
+      "files": [
+        "Chopi_cce_v2848.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "ncu": {
+      "code": "ncu",
+      "raw_name": "Chumburung",
+      "clean_name": "Chumburung",
+      "tag": "<ncu>",
+      "files": [
+        "Chumburung_ncu_v437.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ckl": {
+      "code": "ckl",
+      "raw_name": "Cibak",
+      "clean_name": "Cibak",
+      "tag": "<ckl>",
+      "files": [
+        "Cibak_ckl_v3695.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "asg": {
+      "code": "asg",
+      "raw_name": "Cishingini",
+      "clean_name": "Cishingini",
+      "tag": "<asg>",
+      "files": [
+        "Cishingini_asg_v1293.csv",
+        "Cishingini_asg_v4344.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "swb": {
+      "code": "swb",
+      "raw_name": "Comorian, Maore",
+      "clean_name": "Comorian, Maore",
+      "tag": "<swb>",
+      "files": [
+        "Comorian,_Maore_swb_v3672.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "swc": {
+      "code": "swc",
+      "raw_name": "Congo Swahili",
+      "clean_name": "Congo Swahili",
+      "tag": "<swc>",
+      "files": [
+        "Congo_Swahili_swc_v2921.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "pov": {
+      "code": "pov",
+      "raw_name": "Crioulo, Upper Guinea",
+      "clean_name": "Crioulo, Upper Guinea",
+      "tag": "<pov>",
+      "files": [
+        "Crioulo,_Upper_Guinea_pov_v3461.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cuv": {
+      "code": "cuv",
+      "raw_name": "Cuvok",
+      "clean_name": "Cuvok",
+      "tag": "<cuv>",
+      "files": [
+        "Cuvok_cuv_v3331.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dri": {
+      "code": "dri",
+      "raw_name": "C’lela",
+      "clean_name": "C’lela",
+      "tag": "<dri>",
+      "files": [
+        "C’lela_dri_v4239.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dsh": {
+      "code": "dsh",
+      "raw_name": "Daasanach",
+      "clean_name": "Daasanach",
+      "tag": "<dsh>",
+      "files": [
+        "Daasanach_dsh_v2189.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dbd": {
+      "code": "dbd",
+      "raw_name": "Dadiya",
+      "clean_name": "Dadiya",
+      "tag": "<dbd>",
+      "files": [
+        "Dadiya_dbd_v3933.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dgi": {
+      "code": "dgi",
+      "raw_name": "Dagara, Northern",
+      "clean_name": "Dagara, Northern",
+      "tag": "<dgi>",
+      "files": [
+        "Dagara,_Northern_dgi_v3053.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dag": {
+      "code": "dag",
+      "raw_name": "Dagbani",
+      "clean_name": "Dagbani",
+      "tag": "<dag>",
+      "files": [
+        "Dagbani_dag_v2263.csv",
+        "Dagbani_dag_v2264.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "daf": {
+      "code": "daf",
+      "raw_name": "Dan",
+      "clean_name": "Dan",
+      "tag": "<daf>",
+      "files": [
+        "Dan_daf_v1830.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dnj": {
+      "code": "dnj",
+      "raw_name": "Dan",
+      "clean_name": "Dan",
+      "tag": "<dnj>",
+      "files": [
+        "Dan_dnj_v1831.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "daa": {
+      "code": "daa",
+      "raw_name": "Dangaléat",
+      "clean_name": "Dangaléat",
+      "tag": "<daa>",
+      "files": [
+        "Dangaléat_daa_v354.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tcc": {
+      "code": "tcc",
+      "raw_name": "Datooga",
+      "clean_name": "Datooga",
+      "tag": "<tcc>",
+      "files": [
+        "Datooga_tcc_v1514.csv",
+        "Datooga_tcc_v3050.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dwr": {
+      "code": "dwr",
+      "raw_name": "Dawro",
+      "clean_name": "Dawro",
+      "tag": "<dwr>",
+      "files": [
+        "Dawro_dwr_v1672.csv",
+        "Dawro_dwr_v342.csv",
+        "Dawro_dwr_v4074.csv",
+        "Dawro_dwr_v4075.csv",
+        "Dawro_dwr_v505.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mzw": {
+      "code": "mzw",
+      "raw_name": "Deg",
+      "clean_name": "Deg",
+      "tag": "<mzw>",
+      "files": [
+        "Deg_mzw_v2012.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ntr": {
+      "code": "ntr",
+      "raw_name": "Delo",
+      "clean_name": "Delo",
+      "tag": "<ntr>",
+      "files": [
+        "Delo_ntr_v1795.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "anv": {
+      "code": "anv",
+      "raw_name": "Denya",
+      "clean_name": "Denya",
+      "tag": "<anv>",
+      "files": [
+        "Denya_anv_v343.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "did": {
+      "code": "did",
+      "raw_name": "Didinga",
+      "clean_name": "Didinga",
+      "tag": "<did>",
+      "files": [
+        "Didinga_did_v1890.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dur": {
+      "code": "dur",
+      "raw_name": "Dii",
+      "clean_name": "Dii",
+      "tag": "<dur>",
+      "files": [
+        "Dii_dur_v1511.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dik": {
+      "code": "dik",
+      "raw_name": "Dinka Southwestern",
+      "clean_name": "Dinka Southwestern",
+      "tag": "<dik>",
+      "files": [
+        "Dinka_Southwestern_dik_v242.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "dks": {
+      "code": "dks",
+      "raw_name": "Dinka, Southeastern",
+      "clean_name": "Dinka, Southeastern",
+      "tag": "<dks>",
+      "files": [
+        "Dinka,_Southeastern_dks_v1800.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dyi": {
+      "code": "dyi",
+      "raw_name": "Djimini Senoufo",
+      "clean_name": "Djimini Senoufo",
+      "tag": "<dyi>",
+      "files": [
+        "Djimini_Senoufo_dyi_v1598.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dde": {
+      "code": "dde",
+      "raw_name": "Doondo",
+      "clean_name": "Doondo",
+      "tag": "<dde>",
+      "files": [
+        "Doondo_dde_v4451.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dow": {
+      "code": "dow",
+      "raw_name": "Doyayo",
+      "clean_name": "Doyayo",
+      "tag": "<dow>",
+      "files": [
+        "Doyayo_dow_v880.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dug": {
+      "code": "dug",
+      "raw_name": "Duruma",
+      "clean_name": "Duruma",
+      "tag": "<dug>",
+      "files": [
+        "Duruma_dug_v2199.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dae": {
+      "code": "dae",
+      "raw_name": "Duupa",
+      "clean_name": "Duupa",
+      "tag": "<dae>",
+      "files": [
+        "Duupa_dae_v4547.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ldb": {
+      "code": "ldb",
+      "raw_name": "Duya",
+      "clean_name": "Duya",
+      "tag": "<ldb>",
+      "files": [
+        "Duya_ldb_v3978.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dyu": {
+      "code": "dyu",
+      "raw_name": "Dyula",
+      "clean_name": "Dyula",
+      "tag": "<dyu>",
+      "files": [
+        "Dyula_dyu_v1728.csv",
+        "Dyula_dyu_v1754.csv",
+        "Dyula_dyu_v3054.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "dnn": {
+      "code": "dnn",
+      "raw_name": "Dzùùngoo",
+      "clean_name": "Dzùùngoo",
+      "tag": "<dnn>",
+      "files": [
+        "Dzùùngoo_dnn_v3902.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xrb": {
+      "code": "xrb",
+      "raw_name": "Eastern Karaboro",
+      "clean_name": "Eastern Karaboro",
+      "tag": "<xrb>",
+      "files": [
+        "Eastern_Karaboro_xrb_v1941.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kqo": {
+      "code": "kqo",
+      "raw_name": "Eastern Krahn",
+      "clean_name": "Eastern Krahn",
+      "tag": "<kqo>",
+      "files": [
+        "Eastern_Krahn_kqo_v1680.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "igb": {
+      "code": "igb",
+      "raw_name": "Ebira",
+      "clean_name": "Ebira",
+      "tag": "<igb>",
+      "files": [
+        "Ebira_igb_v2539.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ebr": {
+      "code": "ebr",
+      "raw_name": "Ebrié",
+      "clean_name": "Ebrié",
+      "tag": "<ebr>",
+      "files": [
+        "Ebrié_ebr_v3031.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bin": {
+      "code": "bin",
+      "raw_name": "Edo",
+      "clean_name": "Edo",
+      "tag": "<bin>",
+      "files": [
+        "Edo_bin_v3935.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "efi": {
+      "code": "efi",
+      "raw_name": "Efik",
+      "clean_name": "Efik",
+      "tag": "<efi>",
+      "files": [
+        "Efik_efi_v2570.csv",
+        "Efik_efi_v4541.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "ego": {
+      "code": "ego",
+      "raw_name": "Eggon",
+      "clean_name": "Eggon",
+      "tag": "<ego>",
+      "files": [
+        "Eggon_ego_v2667.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "etu": {
+      "code": "etu",
+      "raw_name": "Ejagham",
+      "clean_name": "Ejagham",
+      "tag": "<etu>",
+      "files": [
+        "Ejagham_etu_v889.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "eka": {
+      "code": "eka",
+      "raw_name": "Ekajuk",
+      "clean_name": "Ekajuk",
+      "tag": "<eka>",
+      "files": [
+        "Ekajuk_eka_v1154.csv",
+        "Ekajuk_eka_v3992.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "guz": {
+      "code": "guz",
+      "raw_name": "Ekegusii",
+      "clean_name": "Ekegusii",
+      "tag": "<guz>",
+      "files": [
+        "Ekegusii_guz_v2771.csv",
+        "Ekegusii_guz_v2925.csv",
+        "Ekegusii_guz_v2940.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ekm": {
+      "code": "ekm",
+      "raw_name": "Elip",
+      "clean_name": "Elip",
+      "tag": "<ekm>",
+      "files": [
+        "Elip_ekm_v4454.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ebu": {
+      "code": "ebu",
+      "raw_name": "Embu",
+      "clean_name": "Embu",
+      "tag": "<ebu>",
+      "files": [
+        "Embu_ebu_v2770.csv",
+        "Embu_ebu_v2775.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ags": {
+      "code": "ags",
+      "raw_name": "Esimbi",
+      "clean_name": "Esimbi",
+      "tag": "<ags>",
+      "files": [
+        "Esimbi_ags_v3232.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "etx": {
+      "code": "etx",
+      "raw_name": "Eten",
+      "clean_name": "Eten",
+      "tag": "<etx>",
+      "files": [
+        "Eten_etx_v2722.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ich": {
+      "code": "ich",
+      "raw_name": "Etkywan",
+      "clean_name": "Etkywan",
+      "tag": "<ich>",
+      "files": [
+        "Etkywan_ich_v3934.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "utr": {
+      "code": "utr",
+      "raw_name": "Etulo",
+      "clean_name": "Etulo",
+      "tag": "<utr>",
+      "files": [
+        "Etulo_utr_v4113.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ewo": {
+      "code": "ewo",
+      "raw_name": "Ewondo",
+      "clean_name": "Ewondo",
+      "tag": "<ewo>",
+      "files": [
+        "Ewondo_ewo_v1854.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "eza": {
+      "code": "eza",
+      "raw_name": "Ezaa",
+      "clean_name": "Ezaa",
+      "tag": "<eza>",
+      "files": [
+        "Ezaa_eza_v1600.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "fat": {
+      "code": "fat",
+      "raw_name": "Fanti",
+      "clean_name": "Fanti",
+      "tag": "<fat>",
+      "files": [
+        "Fanti_fat_v2913.csv",
+        "Fanti_fat_v2914.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "gur": {
+      "code": "gur",
+      "raw_name": "Farefare",
+      "clean_name": "Farefare",
+      "tag": "<gur>",
+      "files": [
+        "Farefare_gur_v1323.csv",
+        "Farefare_gur_v3194.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "fip": {
+      "code": "fip",
+      "raw_name": "Fipa",
+      "clean_name": "Fipa",
+      "tag": "<fip>",
+      "files": [
+        "Fipa_fip_v2668.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "fon": {
+      "code": "fon",
+      "raw_name": "Fon",
+      "clean_name": "Fon",
+      "tag": "<fon>",
+      "files": [
+        "Fon_fon_v813.csv",
+        "Fon_fon_v817.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "fuv": {
+      "code": "fuv",
+      "raw_name": "Fulani",
+      "clean_name": "Fulani",
+      "tag": "<fuv>",
+      "files": [
+        "Fulani_fuv_v1159.csv",
+        "Fulani_fuv_v2377.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "fuq": {
+      "code": "fuq",
+      "raw_name": "Fulfulde (Central-Eastern Niger)",
+      "clean_name": "Fulfulde",
+      "tag": "<fuq>",
+      "files": [
+        "Fulfulde_(Central-Eastern_Niger)_fuq_v1373.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "fue": {
+      "code": "fue",
+      "raw_name": "Fulfulde, Borgu",
+      "clean_name": "Fulfulde, Borgu",
+      "tag": "<fue>",
+      "files": [
+        "Fulfulde,_Borgu_fue_v3088.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "flr": {
+      "code": "flr",
+      "raw_name": "Fuliiru",
+      "clean_name": "Fuliiru",
+      "tag": "<flr>",
+      "files": [
+        "Fuliiru_flr_v2355.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gaa": {
+      "code": "gaa",
+      "raw_name": "Ga",
+      "clean_name": "Ga",
+      "tag": "<gaa>",
+      "files": [
+        "Ga_gaa_v2708.csv",
+        "Ga_gaa_v2712.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "gab": {
+      "code": "gab",
+      "raw_name": "Gabri",
+      "clean_name": "Gabri",
+      "tag": "<gab>",
+      "files": [
+        "Gabri_gab_v3678.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gmv": {
+      "code": "gmv",
+      "raw_name": "Gamo",
+      "clean_name": "Gamo",
+      "tag": "<gmv>",
+      "files": [
+        "Gamo_gmv_v4041.csv",
+        "Gamo_gmv_v434.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lug": {
+      "code": "lug",
+      "raw_name": "Ganda",
+      "clean_name": "Ganda",
+      "tag": "<lug>",
+      "files": [
+        "Ganda_lug_v1423.csv",
+        "Ganda_lug_v1625.csv",
+        "Ganda_lug_v1829.csv",
+        "Ganda_lug_v2182.csv",
+        "Ganda_lug_v2804.csv",
+        "Ganda_lug_v2808.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "gou": {
+      "code": "gou",
+      "raw_name": "Gavar",
+      "clean_name": "Gavar",
+      "tag": "<gou>",
+      "files": [
+        "Gavar_gou_v4516.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gyl": {
+      "code": "gyl",
+      "raw_name": "Gayil",
+      "clean_name": "Gayil",
+      "tag": "<gyl>",
+      "files": [
+        "Gayil_gyl_v4130.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gqa": {
+      "code": "gqa",
+      "raw_name": "Ga’anda",
+      "clean_name": "Ga’anda",
+      "tag": "<gqa>",
+      "files": [
+        "Ga’anda_gqa_v4349.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gbr": {
+      "code": "gbr",
+      "raw_name": "Gbagyi",
+      "clean_name": "Gbagyi",
+      "tag": "<gbr>",
+      "files": [
+        "Gbagyi_gbr_v1621.csv",
+        "Gbagyi_gbr_v4607.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gbv": {
+      "code": "gbv",
+      "raw_name": "Gbanu",
+      "clean_name": "Gbanu",
+      "tag": "<gbv>",
+      "files": [
+        "Gbanu_gbv_v4352.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "krs": {
+      "code": "krs",
+      "raw_name": "Gbaya (South Sudan)",
+      "clean_name": "Gbaya",
+      "tag": "<krs>",
+      "files": [
+        "Gbaya_(South_Sudan)_krs_v2522.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gya": {
+      "code": "gya",
+      "raw_name": "Gbaya, Northwest",
+      "clean_name": "Gbaya, Northwest",
+      "tag": "<gya>",
+      "files": [
+        "Gbaya,_Northwest_gya_v868.csv",
+        "Gbaya,_Northwest_gya_v871.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gso": {
+      "code": "gso",
+      "raw_name": "Gbaya, Southwest",
+      "clean_name": "Gbaya, Southwest",
+      "tag": "<gso>",
+      "files": [
+        "Gbaya,_Southwest_gso_v1367.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gez": {
+      "code": "gez",
+      "raw_name": "Ge'ez (Ethiopic).",
+      "clean_name": "Ge'ez",
+      "tag": "<gez>",
+      "files": [
+        "Ge'ez_(Ethiopic)._gez_v3177.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "drs": {
+      "code": "drs",
+      "raw_name": "Gedeo",
+      "clean_name": "Gedeo",
+      "tag": "<drs>",
+      "files": [
+        "Gedeo_drs_v4442.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gyz": {
+      "code": "gyz",
+      "raw_name": "Geji",
+      "clean_name": "Geji",
+      "tag": "<gyz>",
+      "files": [
+        "Geji_gyz_v3622.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gej": {
+      "code": "gej",
+      "raw_name": "Gen",
+      "clean_name": "Gen",
+      "tag": "<gej>",
+      "files": [
+        "Gen_gej_v2236.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bbj": {
+      "code": "bbj",
+      "raw_name": "Ghomálá'",
+      "clean_name": "Ghomálá'",
+      "tag": "<bbj>",
+      "files": [
+        "Ghomálá'_bbj_v907.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "gid": {
+      "code": "gid",
+      "raw_name": "Gidar",
+      "clean_name": "Gidar",
+      "tag": "<gid>",
+      "files": [
+        "Gidar_gid_v1120.csv",
+        "Gidar_gid_v3773.csv",
+        "Gidar_gid_v3774.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "acd": {
+      "code": "acd",
+      "raw_name": "Gikyode",
+      "clean_name": "Gikyode",
+      "tag": "<acd>",
+      "files": [
+        "Gikyode_acd_v1741.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nyf": {
+      "code": "nyf",
+      "raw_name": "Giryama",
+      "clean_name": "Giryama",
+      "tag": "<nyf>",
+      "files": [
+        "Giryama_nyf_v2207.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "toh": {
+      "code": "toh",
+      "raw_name": "Gitonga",
+      "clean_name": "Gitonga",
+      "tag": "<toh>",
+      "files": [
+        "Gitonga_toh_v2900.csv",
+        "Gitonga_toh_v2901.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "glw": {
+      "code": "glw",
+      "raw_name": "Glavda",
+      "clean_name": "Glavda",
+      "tag": "<glw>",
+      "files": [
+        "Glavda_glw_v3956.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "god": {
+      "code": "god",
+      "raw_name": "Godié",
+      "clean_name": "Godié",
+      "tag": "<god>",
+      "files": [
+        "Godié_god_v3272.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gof": {
+      "code": "gof",
+      "raw_name": "Gofa",
+      "clean_name": "Gofa",
+      "tag": "<gof>",
+      "files": [
+        "Gofa_gof_v2344.csv",
+        "Gofa_gof_v4044.csv",
+        "Gofa_gof_v435.csv",
+        "Gofa_gof_v506.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gog": {
+      "code": "gog",
+      "raw_name": "Gogo",
+      "clean_name": "Gogo",
+      "tag": "<gog>",
+      "files": [
+        "Gogo_gog_v3038.csv",
+        "Gogo_gog_v3039.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gol": {
+      "code": "gol",
+      "raw_name": "Gola",
+      "clean_name": "Gola",
+      "tag": "<gol>",
+      "files": [
+        "Gola_gol_v2520.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gjn": {
+      "code": "gjn",
+      "raw_name": "Gonja",
+      "clean_name": "Gonja",
+      "tag": "<gjn>",
+      "files": [
+        "Gonja_gjn_v1729.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gqr": {
+      "code": "gqr",
+      "raw_name": "Gor",
+      "clean_name": "Gor",
+      "tag": "<gqr>",
+      "files": [
+        "Gor_gqr_v1173.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gux": {
+      "code": "gux",
+      "raw_name": "Gourmanchéma",
+      "clean_name": "Gourmanchéma",
+      "tag": "<gux>",
+      "files": [
+        "Gourmanchéma_gux_v3055.csv",
+        "Gourmanchéma_gux_v3056.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gbo": {
+      "code": "gbo",
+      "raw_name": "Grebo, Northern",
+      "clean_name": "Grebo, Northern",
+      "tag": "<gbo>",
+      "files": [
+        "Grebo,_Northern_gbo_v2829.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gde": {
+      "code": "gde",
+      "raw_name": "Gude",
+      "clean_name": "Gude",
+      "tag": "<gde>",
+      "files": [
+        "Gude_gde_v1778.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gdf": {
+      "code": "gdf",
+      "raw_name": "Guduf-Gava",
+      "clean_name": "Guduf-Gava",
+      "tag": "<gdf>",
+      "files": [
+        "Guduf-Gava_gdf_v4099.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gkp": {
+      "code": "gkp",
+      "raw_name": "Guinea Kpelle",
+      "clean_name": "Guinea Kpelle",
+      "tag": "<gkp>",
+      "files": [
+        "Guinea_Kpelle_gkp_v1393.csv",
+        "Guinea_Kpelle_gkp_v1395.csv",
+        "Guinea_Kpelle_gkp_v500.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gvl": {
+      "code": "gvl",
+      "raw_name": "Gulay",
+      "clean_name": "Gulay",
+      "tag": "<gvl>",
+      "files": [
+        "Gulay_gvl_v815.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "guw": {
+      "code": "guw",
+      "raw_name": "Gun",
+      "clean_name": "Gun",
+      "tag": "<guw>",
+      "files": [
+        "Gun_guw_v2405.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "rub": {
+      "code": "rub",
+      "raw_name": "Gungu",
+      "clean_name": "Gungu",
+      "tag": "<rub>",
+      "files": [
+        "Gungu_rub_v1837.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "goa": {
+      "code": "goa",
+      "raw_name": "Guro",
+      "clean_name": "Guro",
+      "tag": "<goa>",
+      "files": [
+        "Guro_goa_v3593.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gsl": {
+      "code": "gsl",
+      "raw_name": "Gusilay",
+      "clean_name": "Gusilay",
+      "tag": "<gsl>",
+      "files": [
+        "Gusilay_gsl_v3784.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gwn": {
+      "code": "gwn",
+      "raw_name": "Gwandara",
+      "clean_name": "Gwandara",
+      "tag": "<gwn>",
+      "files": [
+        "Gwandara_gwn_v4458.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gwr": {
+      "code": "gwr",
+      "raw_name": "Gwere",
+      "clean_name": "Gwere",
+      "tag": "<gwr>",
+      "files": [
+        "Gwere_gwr_v2299.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "hdy": {
+      "code": "hdy",
+      "raw_name": "Hadiyya",
+      "clean_name": "Hadiyya",
+      "tag": "<hdy>",
+      "files": [
+        "Hadiyya_hdy_v3498.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "hag": {
+      "code": "hag",
+      "raw_name": "Hanga",
+      "clean_name": "Hanga",
+      "tag": "<hag>",
+      "files": [
+        "Hanga_hag_v1499.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mey": {
+      "code": "mey",
+      "raw_name": "Hassaniyya",
+      "clean_name": "Hassaniyya",
+      "tag": "<mey>",
+      "files": [
+        "Hassaniyya_mey_v4031.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "hau": {
+      "code": "hau",
+      "raw_name": "Hausa Arabic script",
+      "clean_name": "Hausa Arabic script",
+      "tag": "<hau>",
+      "files": [
+        "Hausa_Arabic_script_hau_v3307.csv",
+        "Hausa_hau_v1614.csv",
+        "Hausa_hau_v71.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "hav": {
+      "code": "hav",
+      "raw_name": "Havu",
+      "clean_name": "Havu",
+      "tag": "<hav>",
+      "files": [
+        "Havu_hav_v4408.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "hay": {
+      "code": "hay",
+      "raw_name": "Haya",
+      "clean_name": "Haya",
+      "tag": "<hay>",
+      "files": [
+        "Haya_hay_v3040.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xed": {
+      "code": "xed",
+      "raw_name": "Hdi",
+      "clean_name": "Hdi",
+      "tag": "<xed>",
+      "files": [
+        "Hdi_xed_v1149.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "heh": {
+      "code": "heh",
+      "raw_name": "Hehe",
+      "clean_name": "Hehe",
+      "tag": "<heh>",
+      "files": [
+        "Hehe_heh_v1815.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "hbn": {
+      "code": "hbn",
+      "raw_name": "Heiban (Sudan)",
+      "clean_name": "Heiban",
+      "tag": "<hbn>",
+      "files": [
+        "Heiban_(Sudan)_hbn_v3402.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "her": {
+      "code": "her",
+      "raw_name": "Herero",
+      "clean_name": "Herero",
+      "tag": "<her>",
+      "files": [
+        "Herero_her_v3390.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "hbb": {
+      "code": "hbb",
+      "raw_name": "Huba",
+      "clean_name": "Huba",
+      "tag": "<hbb>",
+      "files": [
+        "Huba_hbb_v2723.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "uth": {
+      "code": "uth",
+      "raw_name": "Hun-Saare",
+      "clean_name": "Hun-Saare",
+      "tag": "<uth>",
+      "files": [
+        "Hun-Saare_uth_v1977.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nat": {
+      "code": "nat",
+      "raw_name": "Hungworo",
+      "clean_name": "Hungworo",
+      "tag": "<nat>",
+      "files": [
+        "Hungworo_nat_v4482.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "hwo": {
+      "code": "hwo",
+      "raw_name": "Hwana",
+      "clean_name": "Hwana",
+      "tag": "<hwo>",
+      "files": [
+        "Hwana_hwo_v3777.csv",
+        "Hwana_hwo_v4357.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jab": {
+      "code": "jab",
+      "raw_name": "Hyam",
+      "clean_name": "Hyam",
+      "tag": "<jab>",
+      "files": [
+        "Hyam_jab_v2521.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "llb": {
+      "code": "llb",
+      "raw_name": "ILolo",
+      "clean_name": "ILolo",
+      "tag": "<llb>",
+      "files": [
+        "ILolo_llb_v3096.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cen": {
+      "code": "cen",
+      "raw_name": "Ibaas",
+      "clean_name": "Ibaas",
+      "tag": "<cen>",
+      "files": [
+        "Ibaas_cen_v2514.csv",
+        "Ibaas_cen_v4750.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "iby": {
+      "code": "iby",
+      "raw_name": "Ibani",
+      "clean_name": "Ibani",
+      "tag": "<iby>",
+      "files": [
+        "Ibani_iby_v3936.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ibb": {
+      "code": "ibb",
+      "raw_name": "Ibibio",
+      "clean_name": "Ibibio",
+      "tag": "<ibb>",
+      "files": [
+        "Ibibio_ibb_v2619.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "idu": {
+      "code": "idu",
+      "raw_name": "Idoma",
+      "clean_name": "Idoma",
+      "tag": "<idu>",
+      "files": [
+        "Idoma_idu_v2537.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ife": {
+      "code": "ife",
+      "raw_name": "Ifè",
+      "clean_name": "Ifè",
+      "tag": "<ife>",
+      "files": [
+        "Ifè_ife_v1759.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "igl": {
+      "code": "igl",
+      "raw_name": "Igala",
+      "clean_name": "Igala",
+      "tag": "<igl>",
+      "files": [
+        "Igala_igl_v2615.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ibo": {
+      "code": "ibo",
+      "raw_name": "Igbo",
+      "clean_name": "Igbo",
+      "tag": "<ibo>",
+      "files": [
+        "Igbo_ibo_v1624.csv",
+        "Igbo_ibo_v77.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "ige": {
+      "code": "ige",
+      "raw_name": "Igede",
+      "clean_name": "Igede",
+      "tag": "<ige>",
+      "files": [
+        "Igede_ige_v2538.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ikk": {
+      "code": "ikk",
+      "raw_name": "Ika",
+      "clean_name": "Ika",
+      "tag": "<ikk>",
+      "files": [
+        "Ika_ikk_v3066.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ikz": {
+      "code": "ikz",
+      "raw_name": "Ikizu",
+      "clean_name": "Ikizu",
+      "tag": "<ikz>",
+      "files": [
+        "Ikizu_ikz_v3880.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ntk": {
+      "code": "ntk",
+      "raw_name": "Ikoma-Nata-Isenye",
+      "clean_name": "Ikoma-Nata-Isenye",
+      "tag": "<ntk>",
+      "files": [
+        "Ikoma-Nata-Isenye_ntk_v3274.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ikw": {
+      "code": "ikw",
+      "raw_name": "Ikwere",
+      "clean_name": "Ikwere",
+      "tag": "<ikw>",
+      "files": [
+        "Ikwere_ikw_v1190.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "iqw": {
+      "code": "iqw",
+      "raw_name": "Ikwo",
+      "clean_name": "Ikwo",
+      "tag": "<iqw>",
+      "files": [
+        "Ikwo_iqw_v1599.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ilb": {
+      "code": "ilb",
+      "raw_name": "Ila",
+      "clean_name": "Ila",
+      "tag": "<ilb>",
+      "files": [
+        "Ila_ilb_v888.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "irk": {
+      "code": "irk",
+      "raw_name": "Iraqw",
+      "clean_name": "Iraqw",
+      "tag": "<irk>",
+      "files": [
+        "Iraqw_irk_v3041.csv",
+        "Iraqw_irk_v3308.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "iri": {
+      "code": "iri",
+      "raw_name": "Irigwe",
+      "clean_name": "Irigwe",
+      "tag": "<iri>",
+      "files": [
+        "Irigwe_iri_v1832.csv",
+        "Irigwe_iri_v4609.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "isn": {
+      "code": "isn",
+      "raw_name": "Isanzu",
+      "clean_name": "Isanzu",
+      "tag": "<isn>",
+      "files": [
+        "Isanzu_isn_v4558.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "szv": {
+      "code": "szv",
+      "raw_name": "Isu",
+      "clean_name": "Isu",
+      "tag": "<szv>",
+      "files": [
+        "Isu_szv_v3334.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "atg": {
+      "code": "atg",
+      "raw_name": "Ivbie North-Okpela-Arhe",
+      "clean_name": "Ivbie North-Okpela-Arhe",
+      "tag": "<atg>",
+      "files": [
+        "Ivbie_North-Okpela-Arhe_atg_v350.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "izr": {
+      "code": "izr",
+      "raw_name": "Izere",
+      "clean_name": "Izere",
+      "tag": "<izr>",
+      "files": [
+        "Izere_izr_v2070.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "izz": {
+      "code": "izz",
+      "raw_name": "Izii",
+      "clean_name": "Izii",
+      "tag": "<izz>",
+      "files": [
+        "Izii_izz_v1601.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jib": {
+      "code": "jib",
+      "raw_name": "Jibu",
+      "clean_name": "Jibu",
+      "tag": "<jib>",
+      "files": [
+        "Jibu_jib_v2396.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jit": {
+      "code": "jit",
+      "raw_name": "Jita",
+      "clean_name": "Jita",
+      "tag": "<jit>",
+      "files": [
+        "Jita_jit_v2238.csv",
+        "Jita_jit_v3689.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kaj": {
+      "code": "kaj",
+      "raw_name": "Jju",
+      "clean_name": "Jju",
+      "tag": "<kaj>",
+      "files": [
+        "Jju_kaj_v3396.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "csk": {
+      "code": "csk",
+      "raw_name": "Jola-Kasa",
+      "clean_name": "Jola-Kasa",
+      "tag": "<csk>",
+      "files": [
+        "Jola-Kasa_csk_v1549.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jow": {
+      "code": "jow",
+      "raw_name": "Jowulu",
+      "clean_name": "Jowulu",
+      "tag": "<jow>",
+      "files": [
+        "Jowulu_jow_v3776.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jum": {
+      "code": "jum",
+      "raw_name": "Jumjum",
+      "clean_name": "Jumjum",
+      "tag": "<jum>",
+      "files": [
+        "Jumjum_jum_v4080.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bex": {
+      "code": "bex",
+      "raw_name": "Jur Modo",
+      "clean_name": "Jur Modo",
+      "tag": "<bex>",
+      "files": [
+        "Jur_Modo_bex_v1744.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gna": {
+      "code": "gna",
+      "raw_name": "Kaansa",
+      "clean_name": "Kaansa",
+      "tag": "<gna>",
+      "files": [
+        "Kaansa_gna_v2023.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ksp": {
+      "code": "ksp",
+      "raw_name": "Kaba",
+      "clean_name": "Kaba",
+      "tag": "<ksp>",
+      "files": [
+        "Kaba_ksp_v1485.csv",
+        "Kaba_ksp_v2818.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kbp": {
+      "code": "kbp",
+      "raw_name": "Kabiyè",
+      "clean_name": "Kabiyè",
+      "tag": "<kbp>",
+      "files": [
+        "Kabiyè_kbp_v555.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "cwa": {
+      "code": "cwa",
+      "raw_name": "Kabwa",
+      "clean_name": "Kabwa",
+      "tag": "<cwa>",
+      "files": [
+        "Kabwa_cwa_v3256.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kab": {
+      "code": "kab",
+      "raw_name": "Kabyle",
+      "clean_name": "Kabyle",
+      "tag": "<kab>",
+      "files": [
+        "Kabyle_kab_v4409.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "kbr": {
+      "code": "kbr",
+      "raw_name": "Kafa",
+      "clean_name": "Kafa",
+      "tag": "<kbr>",
+      "files": [
+        "Kafa_kbr_v2763.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kki": {
+      "code": "kki",
+      "raw_name": "Kagulu",
+      "clean_name": "Kagulu",
+      "tag": "<kki>",
+      "files": [
+        "Kagulu_kki_v1508.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kkj": {
+      "code": "kkj",
+      "raw_name": "Kako",
+      "clean_name": "Kako",
+      "tag": "<kkj>",
+      "files": [
+        "Kako_kkj_v1768.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "keo": {
+      "code": "keo",
+      "raw_name": "Kakwa",
+      "clean_name": "Kakwa",
+      "tag": "<keo>",
+      "files": [
+        "Kakwa_keo_v3362.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ijn": {
+      "code": "ijn",
+      "raw_name": "Kalabari",
+      "clean_name": "Kalabari",
+      "tag": "<ijn>",
+      "files": [
+        "Kalabari_ijn_v2540.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kck": {
+      "code": "kck",
+      "raw_name": "Kalanga",
+      "clean_name": "Kalanga",
+      "tag": "<kck>",
+      "files": [
+        "Kalanga_kck_v4466.csv",
+        "Kalanga_kck_v860.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kln": {
+      "code": "kln",
+      "raw_name": "Kalenjin",
+      "clean_name": "Kalenjin",
+      "tag": "<kln>",
+      "files": [
+        "Kalenjin_kln_v1585.csv",
+        "Kalenjin_kln_v1586.csv",
+        "Kalenjin_kln_v2927.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kam": {
+      "code": "kam",
+      "raw_name": "Kamba (Kenya)",
+      "clean_name": "Kamba",
+      "tag": "<kam>",
+      "files": [
+        "Kamba_(Kenya)_kam_v2772.csv",
+        "Kamba_(Kenya)_kam_v2773.csv",
+        "Kamba_(Kenya)_kam_v2774.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "ktb": {
+      "code": "ktb",
+      "raw_name": "Kambaata",
+      "clean_name": "Kambaata",
+      "tag": "<ktb>",
+      "files": [
+        "Kambaata_ktb_v3958.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kcu": {
+      "code": "kcu",
+      "raw_name": "Kami",
+      "clean_name": "Kami",
+      "tag": "<kcu>",
+      "files": [
+        "Kami_kcu_v4559.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kcq": {
+      "code": "kcq",
+      "raw_name": "Kamo",
+      "clean_name": "Kamo",
+      "tag": "<kcq>",
+      "files": [
+        "Kamo_kcq_v3938.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kqn": {
+      "code": "kqn",
+      "raw_name": "Kaonde",
+      "clean_name": "Kaonde",
+      "tag": "<kqn>",
+      "files": [
+        "Kaonde_kqn_v2955.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "kzr": {
+      "code": "kzr",
+      "raw_name": "Karang",
+      "clean_name": "Karang",
+      "tag": "<kzr>",
+      "files": [
+        "Karang_kzr_v2742.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kbn": {
+      "code": "kbn",
+      "raw_name": "Kare",
+      "clean_name": "Kare",
+      "tag": "<kbn>",
+      "files": [
+        "Kare_kbn_v2695.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "krx": {
+      "code": "krx",
+      "raw_name": "Karon",
+      "clean_name": "Karon",
+      "tag": "<krx>",
+      "files": [
+        "Karon_krx_v2018.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xsm": {
+      "code": "xsm",
+      "raw_name": "Kasem",
+      "clean_name": "Kasem",
+      "tag": "<xsm>",
+      "files": [
+        "Kasem_xsm_v1303.csv",
+        "Kasem_xsm_v3661.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xtc": {
+      "code": "xtc",
+      "raw_name": "Katcha-Kadugli-Miri",
+      "clean_name": "Katcha-Kadugli-Miri",
+      "tag": "<xtc>",
+      "files": [
+        "Katcha-Kadugli-Miri_xtc_v2494.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "khy": {
+      "code": "khy",
+      "raw_name": "Kele (Democratic Republic of Congo)",
+      "clean_name": "Kele",
+      "tag": "<khy>",
+      "files": [
+        "Kele_(Democratic_Republic_of_Congo)_khy_v1496.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kbo": {
+      "code": "kbo",
+      "raw_name": "Keliko",
+      "clean_name": "Keliko",
+      "tag": "<kbo>",
+      "files": [
+        "Keliko_kbo_v2052.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kyq": {
+      "code": "kyq",
+      "raw_name": "Kenga",
+      "clean_name": "Kenga",
+      "tag": "<kyq>",
+      "files": [
+        "Kenga_kyq_v1158.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ken": {
+      "code": "ken",
+      "raw_name": "Kenyang",
+      "clean_name": "Kenyang",
+      "tag": "<ken>",
+      "files": [
+        "Kenyang_ken_v388.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xnz": {
+      "code": "xnz",
+      "raw_name": "Kenzi Nubian",
+      "clean_name": "Kenzi Nubian",
+      "tag": "<xnz>",
+      "files": [
+        "Kenzi_Nubian_xnz_v2610.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ker": {
+      "code": "ker",
+      "raw_name": "Kera",
+      "clean_name": "Kera",
+      "tag": "<ker>",
+      "files": [
+        "Kera_ker_v3118.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "naq": {
+      "code": "naq",
+      "raw_name": "Khoekhoe",
+      "clean_name": "Khoekhoe",
+      "tag": "<naq>",
+      "files": [
+        "Khoekhoe_naq_v3494.csv",
+        "Khoekhoe_naq_v548.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kik": {
+      "code": "kik",
+      "raw_name": "Kikuyu",
+      "clean_name": "Kikuyu",
+      "tag": "<kik>",
+      "files": [
+        "Kikuyu_kik_v1201.csv",
+        "Kikuyu_kik_v1202.csv",
+        "Kikuyu_kik_v1622.csv",
+        "Kikuyu_kik_v2926.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "kia": {
+      "code": "kia",
+      "raw_name": "Kim",
+      "clean_name": "Kim",
+      "tag": "<kia>",
+      "files": [
+        "Kim_kia_v3248.csv",
+        "Kim_kia_v810.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kiv": {
+      "code": "kiv",
+      "raw_name": "Kimbu",
+      "clean_name": "Kimbu",
+      "tag": "<kiv>",
+      "files": [
+        "Kimbu_kiv_v4469.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kmb": {
+      "code": "kmb",
+      "raw_name": "Kimbundu",
+      "clean_name": "Kimbundu",
+      "tag": "<kmb>",
+      "files": [
+        "Kimbundu_kmb_v2669.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "kqp": {
+      "code": "kqp",
+      "raw_name": "Kimré",
+      "clean_name": "Kimré",
+      "tag": "<kqp>",
+      "files": [
+        "Kimré_kqp_v1612.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mer": {
+      "code": "mer",
+      "raw_name": "Kimîîru",
+      "clean_name": "Kimîîru",
+      "tag": "<mer>",
+      "files": [
+        "Kimîîru_mer_v2929.csv",
+        "Kimîîru_mer_v2942.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nnb": {
+      "code": "nnb",
+      "raw_name": "Kinandi (Ndandi)",
+      "clean_name": "Kinandi",
+      "tag": "<nnb>",
+      "files": [
+        "Kinandi_(Ndandi)_nnb_v1493.csv",
+        "Kinandi_(Ndandi)_nnb_v1833.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "zga": {
+      "code": "zga",
+      "raw_name": "Kinga",
+      "clean_name": "Kinga",
+      "tag": "<zga>",
+      "files": [
+        "Kinga_zga_v2312.csv",
+        "Kinga_zga_v3098.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "okr": {
+      "code": "okr",
+      "raw_name": "Kirike",
+      "clean_name": "Kirike",
+      "tag": "<okr>",
+      "files": [
+        "Kirike_okr_v2542.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kqs": {
+      "code": "kqs",
+      "raw_name": "Kissi",
+      "clean_name": "Kissi",
+      "tag": "<kqs>",
+      "files": [
+        "Kissi_kqs_v1394.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mkw": {
+      "code": "mkw",
+      "raw_name": "Kituba",
+      "clean_name": "Kituba",
+      "tag": "<mkw>",
+      "files": [
+        "Kituba_mkw_v4086.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ktu": {
+      "code": "ktu",
+      "raw_name": "Kituba (Democratic Republic of Congo)",
+      "clean_name": "Kituba",
+      "tag": "<ktu>",
+      "files": [
+        "Kituba_(Democratic_Republic_of_Congo)_ktu_v1491.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "klu": {
+      "code": "klu",
+      "raw_name": "Klao",
+      "clean_name": "Klao",
+      "tag": "<klu>",
+      "files": [
+        "Klao_klu_v2830.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kmw": {
+      "code": "kmw",
+      "raw_name": "Komo",
+      "clean_name": "Komo",
+      "tag": "<kmw>",
+      "files": [
+        "Komo_kmw_v3509.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xon": {
+      "code": "xon",
+      "raw_name": "Konkomba",
+      "clean_name": "Konkomba",
+      "tag": "<xon>",
+      "files": [
+        "Konkomba_xon_v1150.csv",
+        "Konkomba_xon_v1460.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kma": {
+      "code": "kma",
+      "raw_name": "Konni",
+      "clean_name": "Konni",
+      "tag": "<kma>",
+      "files": [
+        "Konni_kma_v2421.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kno": {
+      "code": "kno",
+      "raw_name": "Kono (Sierra Leone)",
+      "clean_name": "Kono",
+      "tag": "<kno>",
+      "files": [
+        "Kono_(Sierra_Leone)_kno_v2946.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kxc": {
+      "code": "kxc",
+      "raw_name": "Konso",
+      "clean_name": "Konso",
+      "tag": "<kxc>",
+      "files": [
+        "Konso_kxc_v3977.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ozm": {
+      "code": "ozm",
+      "raw_name": "Koonzime",
+      "clean_name": "Koonzime",
+      "tag": "<ozm>",
+      "files": [
+        "Koonzime_ozm_v2387.csv",
+        "Koonzime_ozm_v2388.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kqy": {
+      "code": "kqy",
+      "raw_name": "Koorete",
+      "clean_name": "Koorete",
+      "tag": "<kqy>",
+      "files": [
+        "Koorete_kqy_v3178.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "eko": {
+      "code": "eko",
+      "raw_name": "Koti",
+      "clean_name": "Koti",
+      "tag": "<eko>",
+      "files": [
+        "Koti_eko_v2646.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kyf": {
+      "code": "kyf",
+      "raw_name": "Kouya",
+      "clean_name": "Kouya",
+      "tag": "<kyf>",
+      "files": [
+        "Kouya_kyf_v1139.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ses": {
+      "code": "ses",
+      "raw_name": "Koyraboro Senni Songhai",
+      "clean_name": "Koyraboro Senni Songhai",
+      "tag": "<ses>",
+      "files": [
+        "Koyraboro_Senni_Songhai_ses_v1465.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kri": {
+      "code": "kri",
+      "raw_name": "Krio",
+      "clean_name": "Krio",
+      "tag": "<kri>",
+      "files": [
+        "Krio_kri_v2948.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "kua": {
+      "code": "kua",
+      "raw_name": "Kuanyama",
+      "clean_name": "Kuanyama",
+      "tag": "<kua>",
+      "files": [
+        "Kuanyama_kua_v469.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "kdi": {
+      "code": "kdi",
+      "raw_name": "Kumam",
+      "clean_name": "Kumam",
+      "tag": "<kdi>",
+      "files": [
+        "Kumam_kdi_v1441.csv",
+        "Kumam_kdi_v2676.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kdn": {
+      "code": "kdn",
+      "raw_name": "Kunda",
+      "clean_name": "Kunda",
+      "tag": "<kdn>",
+      "files": [
+        "Kunda_kdn_v2240.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xuo": {
+      "code": "xuo",
+      "raw_name": "Kuo",
+      "clean_name": "Kuo",
+      "tag": "<xuo>",
+      "files": [
+        "Kuo_xuo_v1178.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kpz": {
+      "code": "kpz",
+      "raw_name": "Kupsapiiny",
+      "clean_name": "Kupsapiiny",
+      "tag": "<kpz>",
+      "files": [
+        "Kupsapiiny_kpz_v4753.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "knk": {
+      "code": "knk",
+      "raw_name": "Kuranko",
+      "clean_name": "Kuranko",
+      "tag": "<knk>",
+      "files": [
+        "Kuranko_knk_v2947.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kuj": {
+      "code": "kuj",
+      "raw_name": "Kuria",
+      "clean_name": "Kuria",
+      "tag": "<kuj>",
+      "files": [
+        "Kuria_kuj_v1814.csv",
+        "Kuria_kuj_v3187.csv",
+        "Kuria_kuj_v3188.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kus": {
+      "code": "kus",
+      "raw_name": "Kusaal",
+      "clean_name": "Kusaal",
+      "tag": "<kus>",
+      "files": [
+        "Kusaal_kus_v3752.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kub": {
+      "code": "kub",
+      "raw_name": "Kutep",
+      "clean_name": "Kutep",
+      "tag": "<kub>",
+      "files": [
+        "Kutep_kub_v2071.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kdc": {
+      "code": "kdc",
+      "raw_name": "Kutu",
+      "clean_name": "Kutu",
+      "tag": "<kdc>",
+      "files": [
+        "Kutu_kdc_v1226.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cwt": {
+      "code": "cwt",
+      "raw_name": "Kuwaataay",
+      "clean_name": "Kuwaataay",
+      "tag": "<cwt>",
+      "files": [
+        "Kuwaataay_cwt_v3697.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kwn": {
+      "code": "kwn",
+      "raw_name": "Kwangali",
+      "clean_name": "Kwangali",
+      "tag": "<kwn>",
+      "files": [
+        "Kwangali_kwn_v4235.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "kya": {
+      "code": "kya",
+      "raw_name": "Kwaya",
+      "clean_name": "Kwaya",
+      "tag": "<kya>",
+      "files": [
+        "Kwaya_kya_v3681.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cwe": {
+      "code": "cwe",
+      "raw_name": "Kwere",
+      "clean_name": "Kwere",
+      "tag": "<cwe>",
+      "files": [
+        "Kwere_cwe_v1125.csv",
+        "Kwere_cwe_v3781.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lap": {
+      "code": "lap",
+      "raw_name": "Laka (Chad)",
+      "clean_name": "Laka",
+      "tag": "<lap>",
+      "files": [
+        "Laka_(Chad)_lap_v2067.csv",
+        "Laka_(Chad)_lap_v3156.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "leb": {
+      "code": "leb",
+      "raw_name": "Lala-Bisa",
+      "clean_name": "Lala-Bisa",
+      "tag": "<leb>",
+      "files": [
+        "Lala-Bisa_leb_v2451.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lla": {
+      "code": "lla",
+      "raw_name": "Lala-Roba",
+      "clean_name": "Lala-Roba",
+      "tag": "<lla>",
+      "files": [
+        "Lala-Roba_lla_v3721.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lam": {
+      "code": "lam",
+      "raw_name": "Lamba",
+      "clean_name": "Lamba",
+      "tag": "<lam>",
+      "files": [
+        "Lamba_lam_v947.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "lai": {
+      "code": "lai",
+      "raw_name": "Lambya",
+      "clean_name": "Lambya",
+      "tag": "<lai>",
+      "files": [
+        "Lambya_lai_v1607.csv",
+        "Lambya_lai_v4154.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bma": {
+      "code": "bma",
+      "raw_name": "Lame",
+      "clean_name": "Lame",
+      "tag": "<bma>",
+      "files": [
+        "Lame_bma_v4449.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lns": {
+      "code": "lns",
+      "raw_name": "Lamnso’",
+      "clean_name": "Lamnso’",
+      "tag": "<lns>",
+      "files": [
+        "Lamnso’_lns_v3583.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lag": {
+      "code": "lag",
+      "raw_name": "Langi",
+      "clean_name": "Langi",
+      "tag": "<lag>",
+      "files": [
+        "Langi_lag_v3766.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "laj": {
+      "code": "laj",
+      "raw_name": "Lango (Uganda)",
+      "clean_name": "Lango",
+      "tag": "<laj>",
+      "files": [
+        "Lango_(Uganda)_laj_v1974.csv",
+        "Lango_(Uganda)_laj_v472.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ldk": {
+      "code": "ldk",
+      "raw_name": "Leelau",
+      "clean_name": "Leelau",
+      "tag": "<ldk>",
+      "files": [
+        "Leelau_ldk_v4474.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lgm": {
+      "code": "lgm",
+      "raw_name": "Lega-Mwenga",
+      "clean_name": "Lega-Mwenga",
+      "tag": "<lgm>",
+      "files": [
+        "Lega-Mwenga_lgm_v1497.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lef": {
+      "code": "lef",
+      "raw_name": "Lelemi",
+      "clean_name": "Lelemi",
+      "tag": "<lef>",
+      "files": [
+        "Lelemi_lef_v2442.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "leh": {
+      "code": "leh",
+      "raw_name": "Lenje",
+      "clean_name": "Lenje",
+      "tag": "<leh>",
+      "files": [
+        "Lenje_leh_v552.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xpe": {
+      "code": "xpe",
+      "raw_name": "Liberia Kpelle",
+      "clean_name": "Liberia Kpelle",
+      "tag": "<xpe>",
+      "files": [
+        "Liberia_Kpelle_xpe_v1479.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lik": {
+      "code": "lik",
+      "raw_name": "Lika",
+      "clean_name": "Lika",
+      "tag": "<lik>",
+      "files": [
+        "Lika_lik_v2382.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lmp": {
+      "code": "lmp",
+      "raw_name": "Limbum",
+      "clean_name": "Limbum",
+      "tag": "<lmp>",
+      "files": [
+        "Limbum_lmp_v1240.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lin": {
+      "code": "lin",
+      "raw_name": "Lingala",
+      "clean_name": "Lingala",
+      "tag": "<lin>",
+      "files": [
+        "Lingala_lin_v1964.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "loq": {
+      "code": "loq",
+      "raw_name": "Lobala",
+      "clean_name": "Lobala",
+      "tag": "<loq>",
+      "files": [
+        "Lobala_loq_v1294.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lob": {
+      "code": "lob",
+      "raw_name": "Lobi",
+      "clean_name": "Lobi",
+      "tag": "<lob>",
+      "files": [
+        "Lobi_lob_v3594.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "log": {
+      "code": "log",
+      "raw_name": "Logoti",
+      "clean_name": "Logoti",
+      "tag": "<log>",
+      "files": [
+        "Logoti_log_v1834.csv",
+        "Logoti_log_v2802.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lom": {
+      "code": "lom",
+      "raw_name": "Loma (Liberia)",
+      "clean_name": "Loma",
+      "tag": "<lom>",
+      "files": [
+        "Loma_(Liberia)_lom_v1456.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ngl": {
+      "code": "ngl",
+      "raw_name": "Lomwe",
+      "clean_name": "Lomwe",
+      "tag": "<ngl>",
+      "files": [
+        "Lomwe_ngl_v3244.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lon": {
+      "code": "lon",
+      "raw_name": "Lomwe, Malawi",
+      "clean_name": "Lomwe, Malawi",
+      "tag": "<lon>",
+      "files": [
+        "Lomwe,_Malawi_lon_v3325.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "loz": {
+      "code": "loz",
+      "raw_name": "Lozi",
+      "clean_name": "Lozi",
+      "tag": "<loz>",
+      "files": [
+        "Lozi_loz_v825.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "lua": {
+      "code": "lua",
+      "raw_name": "Luba-Lulua",
+      "clean_name": "Luba-Lulua",
+      "tag": "<lua>",
+      "files": [
+        "Luba-Lulua_lua_v2918.csv",
+        "Luba-Lulua_lua_v2919.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "kcc": {
+      "code": "kcc",
+      "raw_name": "Lubila",
+      "clean_name": "Lubila",
+      "tag": "<kcc>",
+      "files": [
+        "Lubila_kcc_v4534.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lgg": {
+      "code": "lgg",
+      "raw_name": "Lugbara",
+      "clean_name": "Lugbara",
+      "tag": "<lgg>",
+      "files": [
+        "Lugbara_lgg_v2970.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ruf": {
+      "code": "ruf",
+      "raw_name": "Luguru",
+      "clean_name": "Luguru",
+      "tag": "<ruf>",
+      "files": [
+        "Luguru_ruf_v915.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "rag": {
+      "code": "rag",
+      "raw_name": "Lulogooli",
+      "clean_name": "Lulogooli",
+      "tag": "<rag>",
+      "files": [
+        "Lulogooli_rag_v2887.csv",
+        "Lulogooli_rag_v2888.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lmd": {
+      "code": "lmd",
+      "raw_name": "Lumun",
+      "clean_name": "Lumun",
+      "tag": "<lmd>",
+      "files": [
+        "Lumun_lmd_v2493.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "luj": {
+      "code": "luj",
+      "raw_name": "Luna",
+      "clean_name": "Luna",
+      "tag": "<luj>",
+      "files": [
+        "Luna_luj_v4053.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lun": {
+      "code": "lun",
+      "raw_name": "Lunda",
+      "clean_name": "Lunda",
+      "tag": "<lun>",
+      "files": [
+        "Lunda_lun_v3090.csv",
+        "Lunda_lun_v3305.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "luo": {
+      "code": "luo",
+      "raw_name": "Luo (Kenya and Tanzania)",
+      "clean_name": "Luo",
+      "tag": "<luo>",
+      "files": [
+        "Luo_(Kenya_and_Tanzania)_luo_v1810.csv",
+        "Luo_(Kenya_and_Tanzania)_luo_v2652.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "lue": {
+      "code": "lue",
+      "raw_name": "Luvale",
+      "clean_name": "Luvale",
+      "tag": "<lue>",
+      "files": [
+        "Luvale_lue_v2677.csv",
+        "Luvale_lue_v3089.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "lwo": {
+      "code": "lwo",
+      "raw_name": "Luwo",
+      "clean_name": "Luwo",
+      "tag": "<lwo>",
+      "files": [
+        "Luwo_lwo_v1783.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lyn": {
+      "code": "lyn",
+      "raw_name": "Luyana",
+      "clean_name": "Luyana",
+      "tag": "<lyn>",
+      "files": [
+        "Luyana_lyn_v4077.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lee": {
+      "code": "lee",
+      "raw_name": "Lyélé",
+      "clean_name": "Lyélé",
+      "tag": "<lee>",
+      "files": [
+        "Lyélé_lee_v1772.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mdy": {
+      "code": "mdy",
+      "raw_name": "Maale",
+      "clean_name": "Maale",
+      "tag": "<mdy>",
+      "files": [
+        "Maale_mdy_v1688.csv",
+        "Maale_mdy_v1689.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jmc": {
+      "code": "jmc",
+      "raw_name": "Machame",
+      "clean_name": "Machame",
+      "tag": "<jmc>",
+      "files": [
+        "Machame_jmc_v3042.csv",
+        "Machame_jmc_v3043.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mda": {
+      "code": "mda",
+      "raw_name": "Mada (Nigeria)",
+      "clean_name": "Mada",
+      "tag": "<mda>",
+      "files": [
+        "Mada_(Nigeria)_mda_v1802.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "maf": {
+      "code": "maf",
+      "raw_name": "Mafa",
+      "clean_name": "Mafa",
+      "tag": "<maf>",
+      "files": [
+        "Mafa_maf_v4071.csv",
+        "Mafa_maf_v908.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mxx": {
+      "code": "mxx",
+      "raw_name": "Mahou",
+      "clean_name": "Mahou",
+      "tag": "<mxx>",
+      "files": [
+        "Mahou_mxx_v3167.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mpe": {
+      "code": "mpe",
+      "raw_name": "Majang",
+      "clean_name": "Majang",
+      "tag": "<mpe>",
+      "files": [
+        "Majang_mpe_v3180.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mcp": {
+      "code": "mcp",
+      "raw_name": "Makaa",
+      "clean_name": "Makaa",
+      "tag": "<mcp>",
+      "files": [
+        "Makaa_mcp_v1143.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgh": {
+      "code": "mgh",
+      "raw_name": "Makhuwa-Meetto",
+      "clean_name": "Makhuwa-Meetto",
+      "tag": "<mgh>",
+      "files": [
+        "Makhuwa-Meetto_mgh_v1673.csv",
+        "Makhuwa-Meetto_mgh_v2761.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "vmk": {
+      "code": "vmk",
+      "raw_name": "Makhuwa-Shirima",
+      "clean_name": "Makhuwa-Shirima",
+      "tag": "<vmk>",
+      "files": [
+        "Makhuwa-Shirima_vmk_v3013.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kde": {
+      "code": "kde",
+      "raw_name": "Makonde",
+      "clean_name": "Makonde",
+      "tag": "<kde>",
+      "files": [
+        "Makonde_kde_v1174.csv",
+        "Makonde_kde_v2375.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "plt": {
+      "code": "plt",
+      "raw_name": "Malgache",
+      "clean_name": "Malgache",
+      "tag": "<plt>",
+      "files": [
+        "Malgache_plt_v1219.csv",
+        "Malgache_plt_v3103.csv",
+        "Malgache_plt_v384.csv",
+        "Malgache_plt_v396.csv",
+        "Malgache_plt_v814.csv",
+        "Malgache_plt_v873.csv",
+        "Malgache_plt_v96.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgq": {
+      "code": "mgq",
+      "raw_name": "Malila",
+      "clean_name": "Malila",
+      "tag": "<mgq>",
+      "files": [
+        "Malila_mgq_v2566.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "myk": {
+      "code": "myk",
+      "raw_name": "Mamara Senoufo",
+      "clean_name": "Mamara Senoufo",
+      "tag": "<myk>",
+      "files": [
+        "Mamara_Senoufo_myk_v1140.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgr": {
+      "code": "mgr",
+      "raw_name": "Mambwe (ichi-): Lungu",
+      "clean_name": "Mambwe: Lungu",
+      "tag": "<mgr>",
+      "files": [
+        "Mambwe_(ichi-):_Lungu_mgr_v1756.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "maw": {
+      "code": "maw",
+      "raw_name": "Mampruli",
+      "clean_name": "Mampruli",
+      "tag": "<maw>",
+      "files": [
+        "Mampruli_maw_v1784.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgs": {
+      "code": "mgs",
+      "raw_name": "Manda (Tanzania)",
+      "clean_name": "Manda",
+      "tag": "<mgs>",
+      "files": [
+        "Manda_(Tanzania)_mgs_v3684.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mnk": {
+      "code": "mnk",
+      "raw_name": "Mandinka",
+      "clean_name": "Mandinka",
+      "tag": "<mnk>",
+      "files": [
+        "Mandinka_mnk_v3208.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfv": {
+      "code": "mfv",
+      "raw_name": "Mandjak",
+      "clean_name": "Mandjak",
+      "tag": "<mfv>",
+      "files": [
+        "Mandjak_mfv_v3251.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kby": {
+      "code": "kby",
+      "raw_name": "Manga Kanuri",
+      "clean_name": "Manga Kanuri",
+      "tag": "<kby>",
+      "files": [
+        "Manga_Kanuri_kby_v2074.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mge": {
+      "code": "mge",
+      "raw_name": "Mango",
+      "clean_name": "Mango",
+      "tag": "<mge>",
+      "files": [
+        "Mango_mge_v2565.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "knf": {
+      "code": "knf",
+      "raw_name": "Mankanya",
+      "clean_name": "Mankanya",
+      "tag": "<knf>",
+      "files": [
+        "Mankanya_knf_v1214.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mev": {
+      "code": "mev",
+      "raw_name": "Mano",
+      "clean_name": "Mano",
+      "tag": "<mev>",
+      "files": [
+        "Mano_mev_v2831.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mzj": {
+      "code": "mzj",
+      "raw_name": "Manya",
+      "clean_name": "Manya",
+      "tag": "<mzj>",
+      "files": [
+        "Manya_mzj_v3590.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mpg": {
+      "code": "mpg",
+      "raw_name": "Marba",
+      "clean_name": "Marba",
+      "tag": "<mpg>",
+      "files": [
+        "Marba_mpg_v855.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfm": {
+      "code": "mfm",
+      "raw_name": "Marghi South",
+      "clean_name": "Marghi South",
+      "tag": "<mfm>",
+      "files": [
+        "Marghi_South_mfm_v4083.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "myx": {
+      "code": "myx",
+      "raw_name": "Masaaba",
+      "clean_name": "Masaaba",
+      "tag": "<myx>",
+      "files": [
+        "Masaaba_myx_v2183.csv",
+        "Masaaba_myx_v2184.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mas": {
+      "code": "mas",
+      "raw_name": "Masai",
+      "clean_name": "Masai",
+      "tag": "<mas>",
+      "files": [
+        "Masai_mas_v1816.csv",
+        "Masai_mas_v3044.csv",
+        "Masai_mas_v3063.csv",
+        "Masai_mas_v3064.csv",
+        "Masai_mas_v3310.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mcn": {
+      "code": "mcn",
+      "raw_name": "Masana",
+      "clean_name": "Masana",
+      "tag": "<mcn>",
+      "files": [
+        "Masana_mcn_v557.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mho": {
+      "code": "mho",
+      "raw_name": "Mashi",
+      "clean_name": "Mashi",
+      "tag": "<mho>",
+      "files": [
+        "Mashi_mho_v3749.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfh": {
+      "code": "mfh",
+      "raw_name": "Matal",
+      "clean_name": "Matal",
+      "tag": "<mfh>",
+      "files": [
+        "Matal_mfh_v2205.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgv": {
+      "code": "mgv",
+      "raw_name": "Matengo",
+      "clean_name": "Matengo",
+      "tag": "<mgv>",
+      "files": [
+        "Matengo_mgv_v3941.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgw": {
+      "code": "mgw",
+      "raw_name": "Matumbi",
+      "clean_name": "Matumbi",
+      "tag": "<mgw>",
+      "files": [
+        "Matumbi_mgw_v2363.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfe": {
+      "code": "mfe",
+      "raw_name": "Mauritian",
+      "clean_name": "Mauritian",
+      "tag": "<mfe>",
+      "files": [
+        "Mauritian_mfe_v3312.csv",
+        "Mauritian_mfe_v3313.csv",
+        "Mauritian_mfe_v344.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "mdm": {
+      "code": "mdm",
+      "raw_name": "Mayogo",
+      "clean_name": "Mayogo",
+      "tag": "<mdm>",
+      "files": [
+        "Mayogo_mdm_v2648.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "snm": {
+      "code": "snm",
+      "raw_name": "Ma’di, Southern",
+      "clean_name": "Ma’di, Southern",
+      "tag": "<snm>",
+      "files": [
+        "Ma’di,_Southern_snm_v4353.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "myb": {
+      "code": "myb",
+      "raw_name": "Mbay",
+      "clean_name": "Mbay",
+      "tag": "<myb>",
+      "files": [
+        "Mbay_myb_v3108.csv",
+        "Mbay_myb_v444.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfo": {
+      "code": "mfo",
+      "raw_name": "Mbe",
+      "clean_name": "Mbe",
+      "tag": "<mfo>",
+      "files": [
+        "Mbe_mfo_v4354.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfn": {
+      "code": "mfn",
+      "raw_name": "Mbembe, Cross River",
+      "clean_name": "Mbembe, Cross River",
+      "tag": "<mfn>",
+      "files": [
+        "Mbembe,_Cross_River_mfn_v4477.csv",
+        "Mbembe,_Cross_River_mfn_v4478.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xmd": {
+      "code": "xmd",
+      "raw_name": "Mbudum",
+      "clean_name": "Mbudum",
+      "tag": "<xmd>",
+      "files": [
+        "Mbudum_xmd_v4519.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mhd": {
+      "code": "mhd",
+      "raw_name": "Mbugu",
+      "clean_name": "Mbugu",
+      "tag": "<mhd>",
+      "files": [
+        "Mbugu_mhd_v4480.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mqb": {
+      "code": "mqb",
+      "raw_name": "Mbuko",
+      "clean_name": "Mbuko",
+      "tag": "<mqb>",
+      "files": [
+        "Mbuko_mqb_v456.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mhw": {
+      "code": "mhw",
+      "raw_name": "Mbukushu",
+      "clean_name": "Mbukushu",
+      "tag": "<mhw>",
+      "files": [
+        "Mbukushu_mhw_v3922.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mbu": {
+      "code": "mbu",
+      "raw_name": "Mbula-Bwazza",
+      "clean_name": "Mbula-Bwazza",
+      "tag": "<mbu>",
+      "files": [
+        "Mbula-Bwazza_mbu_v1835.csv",
+        "Mbula-Bwazza_mbu_v4399.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mck": {
+      "code": "mck",
+      "raw_name": "Mbunda",
+      "clean_name": "Mbunda",
+      "tag": "<mck>",
+      "files": [
+        "Mbunda_mck_v627.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgy": {
+      "code": "mgy",
+      "raw_name": "Mbunga",
+      "clean_name": "Mbunga",
+      "tag": "<mgy>",
+      "files": [
+        "Mbunga_mgy_v4479.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "byv": {
+      "code": "byv",
+      "raw_name": "Medumba",
+      "clean_name": "Medumba",
+      "tag": "<byv>",
+      "files": [
+        "Medumba_byv_v3294.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfx": {
+      "code": "mfx",
+      "raw_name": "Melo",
+      "clean_name": "Melo",
+      "tag": "<mfx>",
+      "files": [
+        "Melo_mfx_v4133.csv",
+        "Melo_mfx_v4134.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "men": {
+      "code": "men",
+      "raw_name": "Mende",
+      "clean_name": "Mende",
+      "tag": "<men>",
+      "files": [
+        "Mende_men_v2951.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "xmg": {
+      "code": "xmg",
+      "raw_name": "Mengaka",
+      "clean_name": "Mengaka",
+      "tag": "<xmg>",
+      "files": [
+        "Mengaka_xmg_v4520.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "meq": {
+      "code": "meq",
+      "raw_name": "Merey",
+      "clean_name": "Merey",
+      "tag": "<meq>",
+      "files": [
+        "Merey_meq_v1168.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgo": {
+      "code": "mgo",
+      "raw_name": "Meta'",
+      "clean_name": "Meta'",
+      "tag": "<mgo>",
+      "files": [
+        "Meta'_mgo_v2179.csv",
+        "Meta'_mgo_v3235.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mmy": {
+      "code": "mmy",
+      "raw_name": "Migaama",
+      "clean_name": "Migaama",
+      "tag": "<mmy>",
+      "files": [
+        "Migaama_mmy_v2999.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "soy": {
+      "code": "soy",
+      "raw_name": "Miyobe",
+      "clean_name": "Miyobe",
+      "tag": "<soy>",
+      "files": [
+        "Miyobe_soy_v1104.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mmu": {
+      "code": "mmu",
+      "raw_name": "Mmaala",
+      "clean_name": "Mmaala",
+      "tag": "<mmu>",
+      "files": [
+        "Mmaala_mmu_v4518.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bfm": {
+      "code": "bfm",
+      "raw_name": "Mmen",
+      "clean_name": "Mmen",
+      "tag": "<bfm>",
+      "files": [
+        "Mmen_bfm_v3233.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfq": {
+      "code": "mfq",
+      "raw_name": "Moba",
+      "clean_name": "Moba",
+      "tag": "<mfq>",
+      "files": [
+        "Moba_mfq_v2237.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "old": {
+      "code": "old",
+      "raw_name": "Mochi",
+      "clean_name": "Mochi",
+      "tag": "<old>",
+      "files": [
+        "Mochi_old_v3097.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mif": {
+      "code": "mif",
+      "raw_name": "Mofu-Gudur",
+      "clean_name": "Mofu-Gudur",
+      "tag": "<mif>",
+      "files": [
+        "Mofu-Gudur_mif_v1785.csv",
+        "Mofu-Gudur_mif_v4517.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfg": {
+      "code": "mfg",
+      "raw_name": "Mogofin",
+      "clean_name": "Mogofin",
+      "tag": "<mfg>",
+      "files": [
+        "Mogofin_mfg_v2049.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mkl": {
+      "code": "mkl",
+      "raw_name": "Mokole",
+      "clean_name": "Mokole",
+      "tag": "<mkl>",
+      "files": [
+        "Mokole_mkl_v1034.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bri": {
+      "code": "bri",
+      "raw_name": "Mokpwe",
+      "clean_name": "Mokpwe",
+      "tag": "<bri>",
+      "files": [
+        "Mokpwe_bri_v3234.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mlw": {
+      "code": "mlw",
+      "raw_name": "Moloko",
+      "clean_name": "Moloko",
+      "tag": "<mlw>",
+      "files": [
+        "Moloko_mlw_v4710.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lol": {
+      "code": "lol",
+      "raw_name": "Mongo",
+      "clean_name": "Mongo",
+      "tag": "<lol>",
+      "files": [
+        "Mongo_lol_v1495.csv",
+        "Mongo_lol_v2917.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mnh": {
+      "code": "mnh",
+      "raw_name": "Mono",
+      "clean_name": "Mono",
+      "tag": "<mnh>",
+      "files": [
+        "Mono_mnh_v2551.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ary": {
+      "code": "ary",
+      "raw_name": "Moroccan Arabic",
+      "clean_name": "Moroccan Arabic",
+      "tag": "<ary>",
+      "files": [
+        "Moroccan_Arabic_ary_v3655.csv",
+        "Moroccan_Arabic_ary_v558.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "mgc": {
+      "code": "mgc",
+      "raw_name": "Morokodo",
+      "clean_name": "Morokodo",
+      "tag": "<mgc>",
+      "files": [
+        "Morokodo_mgc_v1377.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mos": {
+      "code": "mos",
+      "raw_name": "Mossi",
+      "clean_name": "Mossi",
+      "tag": "<mos>",
+      "files": [
+        "Mossi_mos_v1217.csv",
+        "Mossi_mos_v3057.csv",
+        "Mossi_mos_v3058.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "mug": {
+      "code": "mug",
+      "raw_name": "Mousgoum",
+      "clean_name": "Mousgoum",
+      "tag": "<mug>",
+      "files": [
+        "Mousgoum_mug_v1855.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mpa": {
+      "code": "mpa",
+      "raw_name": "Mpoto",
+      "clean_name": "Mpoto",
+      "tag": "<mpa>",
+      "files": [
+        "Mpoto_mpa_v3973.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mgg": {
+      "code": "mgg",
+      "raw_name": "Mpumpong",
+      "clean_name": "Mpumpong",
+      "tag": "<mgg>",
+      "files": [
+        "Mpumpong_mgg_v3584.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "moz": {
+      "code": "moz",
+      "raw_name": "Mukulu",
+      "clean_name": "Mukulu",
+      "tag": "<moz>",
+      "files": [
+        "Mukulu_moz_v2433.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mzm": {
+      "code": "mzm",
+      "raw_name": "Mumuye",
+      "clean_name": "Mumuye",
+      "tag": "<mzm>",
+      "files": [
+        "Mumuye_mzm_v2069.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mua": {
+      "code": "mua",
+      "raw_name": "Mundang",
+      "clean_name": "Mundang",
+      "tag": "<mua>",
+      "files": [
+        "Mundang_mua_v863.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mnf": {
+      "code": "mnf",
+      "raw_name": "Mundani",
+      "clean_name": "Mundani",
+      "tag": "<mnf>",
+      "files": [
+        "Mundani_mnf_v2208.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mur": {
+      "code": "mur",
+      "raw_name": "Murle",
+      "clean_name": "Murle",
+      "tag": "<mur>",
+      "files": [
+        "Murle_mur_v2383.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mse": {
+      "code": "mse",
+      "raw_name": "Musey",
+      "clean_name": "Musey",
+      "tag": "<mse>",
+      "files": [
+        "Musey_mse_v1130.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "muy": {
+      "code": "muy",
+      "raw_name": "Muyang",
+      "clean_name": "Muyang",
+      "tag": "<muy>",
+      "files": [
+        "Muyang_muy_v1142.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "moa": {
+      "code": "moa",
+      "raw_name": "Mwan",
+      "clean_name": "Mwan",
+      "tag": "<moa>",
+      "files": [
+        "Mwan_moa_v1789.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "wmw": {
+      "code": "wmw",
+      "raw_name": "Mwani",
+      "clean_name": "Mwani",
+      "tag": "<wmw>",
+      "files": [
+        "Mwani_wmw_v1148.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mwe": {
+      "code": "mwe",
+      "raw_name": "Mwera (Chimwera)",
+      "clean_name": "Mwera",
+      "tag": "<mwe>",
+      "files": [
+        "Mwera_(Chimwera)_mwe_v2370.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mye": {
+      "code": "mye",
+      "raw_name": "Myene",
+      "clean_name": "Myene",
+      "tag": "<mye>",
+      "files": [
+        "Myene_mye_v3438.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tnr": {
+      "code": "tnr",
+      "raw_name": "Ménik",
+      "clean_name": "Ménik",
+      "tag": "<tnr>",
+      "files": [
+        "Ménik_tnr_v3542.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "muh": {
+      "code": "muh",
+      "raw_name": "Mündü",
+      "clean_name": "Mündü",
+      "tag": "<muh>",
+      "files": [
+        "Mündü_muh_v1792.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jbn": {
+      "code": "jbn",
+      "raw_name": "Nafusi",
+      "clean_name": "Nafusi",
+      "tag": "<jbn>",
+      "files": [
+        "Nafusi_jbn_v3340.csv",
+        "Nafusi_jbn_v4462.csv",
+        "Nafusi_jbn_v4463.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nmq": {
+      "code": "nmq",
+      "raw_name": "Nambya",
+      "clean_name": "Nambya",
+      "tag": "<nmq>",
+      "files": [
+        "Nambya_nmq_v4487.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nhr": {
+      "code": "nhr",
+      "raw_name": "Naro",
+      "clean_name": "Naro",
+      "tag": "<nhr>",
+      "files": [
+        "Naro_nhr_v1136.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "naw": {
+      "code": "naw",
+      "raw_name": "Nawuri",
+      "clean_name": "Nawuri",
+      "tag": "<naw>",
+      "files": [
+        "Nawuri_naw_v1836.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ncr": {
+      "code": "ncr",
+      "raw_name": "Ncane",
+      "clean_name": "Ncane",
+      "tag": "<ncr>",
+      "files": [
+        "Ncane_ncr_v3726.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ndh": {
+      "code": "ndh",
+      "raw_name": "Ndali",
+      "clean_name": "Ndali",
+      "tag": "<ndh>",
+      "files": [
+        "Ndali_ndh_v2523.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ndj": {
+      "code": "ndj",
+      "raw_name": "Ndamba",
+      "clean_name": "Ndamba",
+      "tag": "<ndj>",
+      "files": [
+        "Ndamba_ndj_v1038.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ndc": {
+      "code": "ndc",
+      "raw_name": "Ndau",
+      "clean_name": "Ndau",
+      "tag": "<ndc>",
+      "files": [
+        "Ndau_ndc_v1694.csv",
+        "Ndau_ndc_v3767.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "dne": {
+      "code": "dne",
+      "raw_name": "Ndendeule",
+      "clean_name": "Ndendeule",
+      "tag": "<dne>",
+      "files": [
+        "Ndendeule_dne_v3940.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ndp": {
+      "code": "ndp",
+      "raw_name": "Ndo",
+      "clean_name": "Ndo",
+      "tag": "<ndp>",
+      "files": [
+        "Ndo_ndp_v2805.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ndz": {
+      "code": "ndz",
+      "raw_name": "Ndogo",
+      "clean_name": "Ndogo",
+      "tag": "<ndz>",
+      "files": [
+        "Ndogo_ndz_v1793.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "njd": {
+      "code": "njd",
+      "raw_name": "Ndonde Hamba",
+      "clean_name": "Ndonde Hamba",
+      "tag": "<njd>",
+      "files": [
+        "Ndonde_Hamba_njd_v3974.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ndo": {
+      "code": "ndo",
+      "raw_name": "Ndonga",
+      "clean_name": "Ndonga",
+      "tag": "<ndo>",
+      "files": [
+        "Ndonga_ndo_v372.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "dno": {
+      "code": "dno",
+      "raw_name": "Ndrulo",
+      "clean_name": "Ndrulo",
+      "tag": "<dno>",
+      "files": [
+        "Ndrulo_dno_v4439.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ndv": {
+      "code": "ndv",
+      "raw_name": "Ndut",
+      "clean_name": "Ndut",
+      "tag": "<ndv>",
+      "files": [
+        "Ndut_ndv_v2574.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nww": {
+      "code": "nww",
+      "raw_name": "Ndwewe",
+      "clean_name": "Ndwewe",
+      "tag": "<nww>",
+      "files": [
+        "Ndwewe_nww_v4375.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ney": {
+      "code": "ney",
+      "raw_name": "Neyo",
+      "clean_name": "Neyo",
+      "tag": "<ney>",
+      "files": [
+        "Neyo_ney_v3273.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sba": {
+      "code": "sba",
+      "raw_name": "Ngambay",
+      "clean_name": "Ngambay",
+      "tag": "<sba>",
+      "files": [
+        "Ngambay_sba_v516.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nxd": {
+      "code": "nxd",
+      "raw_name": "Ngando (Democratic Republic of Congo)",
+      "clean_name": "Ngando",
+      "tag": "<nxd>",
+      "files": [
+        "Ngando_(Democratic_Republic_of_Congo)_nxd_v1492.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gng": {
+      "code": "gng",
+      "raw_name": "Ngangam",
+      "clean_name": "Ngangam",
+      "tag": "<gng>",
+      "files": [
+        "Ngangam_gng_v474.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nga": {
+      "code": "nga",
+      "raw_name": "Ngbaka",
+      "clean_name": "Ngbaka",
+      "tag": "<nga>",
+      "files": [
+        "Ngbaka_nga_v2920.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nge": {
+      "code": "nge",
+      "raw_name": "Ngemba",
+      "clean_name": "Ngemba",
+      "tag": "<nge>",
+      "files": [
+        "Ngemba_nge_v3582.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ngj": {
+      "code": "ngj",
+      "raw_name": "Ngie",
+      "clean_name": "Ngie",
+      "tag": "<ngj>",
+      "files": [
+        "Ngie_ngj_v3332.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nnh": {
+      "code": "nnh",
+      "raw_name": "Ngiemboon",
+      "clean_name": "Ngiemboon",
+      "tag": "<nnh>",
+      "files": [
+        "Ngiemboon_nnh_v299.csv",
+        "Ngiemboon_nnh_v4488.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nnq": {
+      "code": "nnq",
+      "raw_name": "Ngindo",
+      "clean_name": "Ngindo",
+      "tag": "<nnq>",
+      "files": [
+        "Ngindo_nnq_v1674.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "niy": {
+      "code": "niy",
+      "raw_name": "Ngiti",
+      "clean_name": "Ngiti",
+      "tag": "<niy>",
+      "files": [
+        "Ngiti_niy_v1431.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jgo": {
+      "code": "jgo",
+      "raw_name": "Ngomba",
+      "clean_name": "Ngomba",
+      "tag": "<jgo>",
+      "files": [
+        "Ngomba_jgo_v2621.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nla": {
+      "code": "nla",
+      "raw_name": "Ngombale",
+      "clean_name": "Ngombale",
+      "tag": "<nla>",
+      "files": [
+        "Ngombale_nla_v3008.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ngc": {
+      "code": "ngc",
+      "raw_name": "Ngombe (Democratic Republic of Congo)",
+      "clean_name": "Ngombe",
+      "tag": "<ngc>",
+      "files": [
+        "Ngombe_(Democratic_Republic_of_Congo)_ngc_v1490.csv",
+        "Ngombe_(Democratic_Republic_of_Congo)_ngc_v4524.csv",
+        "Ngombe_(Democratic_Republic_of_Congo)_ngc_v4525.csv",
+        "Ngombe_(Democratic_Republic_of_Congo)_ngc_v4527.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ngp": {
+      "code": "ngp",
+      "raw_name": "Ngulu",
+      "clean_name": "Ngulu",
+      "tag": "<ngp>",
+      "files": [
+        "Ngulu_ngp_v1043.csv",
+        "Ngulu_ngp_v4535.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ngz": {
+      "code": "ngz",
+      "raw_name": "Ngungwel",
+      "clean_name": "Ngungwel",
+      "tag": "<ngz>",
+      "files": [
+        "Ngungwel_ngz_v4622.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ngn": {
+      "code": "ngn",
+      "raw_name": "Ngwo",
+      "clean_name": "Ngwo",
+      "tag": "<ngn>",
+      "files": [
+        "Ngwo_ngn_v3236.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kdj": {
+      "code": "kdj",
+      "raw_name": "Ng’akarimojong",
+      "clean_name": "Ng’akarimojong",
+      "tag": "<kdj>",
+      "files": [
+        "Ng’akarimojong_kdj_v2803.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nie": {
+      "code": "nie",
+      "raw_name": "Niellim",
+      "clean_name": "Niellim",
+      "tag": "<nie>",
+      "files": [
+        "Niellim_nie_v3729.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nim": {
+      "code": "nim",
+      "raw_name": "Nilamba",
+      "clean_name": "Nilamba",
+      "tag": "<nim>",
+      "files": [
+        "Nilamba_nim_v1813.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nin": {
+      "code": "nin",
+      "raw_name": "Ninzo",
+      "clean_name": "Ninzo",
+      "tag": "<nin>",
+      "files": [
+        "Ninzo_nin_v367.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nkn": {
+      "code": "nkn",
+      "raw_name": "Nkangala",
+      "clean_name": "Nkangala",
+      "tag": "<nkn>",
+      "files": [
+        "Nkangala_nkn_v4066.csv",
+        "Nkangala_nkn_v4597.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nko": {
+      "code": "nko",
+      "raw_name": "Nkonya",
+      "clean_name": "Nkonya",
+      "tag": "<nko>",
+      "files": [
+        "Nkonya_nko_v255.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nka": {
+      "code": "nka",
+      "raw_name": "Nkoya",
+      "clean_name": "Nkoya",
+      "tag": "<nka>",
+      "files": [
+        "Nkoya_nka_v3091.csv",
+        "Nkoya_nka_v3296.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lem": {
+      "code": "lem",
+      "raw_name": "Nomaande",
+      "clean_name": "Nomaande",
+      "tag": "<lem>",
+      "files": [
+        "Nomaande_lem_v1775.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "snf": {
+      "code": "snf",
+      "raw_name": "Noon",
+      "clean_name": "Noon",
+      "tag": "<snf>",
+      "files": [
+        "Noon_snf_v1646.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nhu": {
+      "code": "nhu",
+      "raw_name": "Noone",
+      "clean_name": "Noone",
+      "tag": "<nhu>",
+      "files": [
+        "Noone_nhu_v461.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfk": {
+      "code": "mfk",
+      "raw_name": "North Mofu",
+      "clean_name": "North Mofu",
+      "tag": "<mfk>",
+      "files": [
+        "North_Mofu_mfk_v551.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nde": {
+      "code": "nde",
+      "raw_name": "North Ndebele",
+      "clean_name": "North Ndebele",
+      "tag": "<nde>",
+      "files": [
+        "North_Ndebele_nde_v1626.csv",
+        "North_Ndebele_nde_v4087.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "dip": {
+      "code": "dip",
+      "raw_name": "Northeastern Dinka",
+      "clean_name": "Northeastern Dinka",
+      "tag": "<dip>",
+      "files": [
+        "Northeastern_Dinka_dip_v2152.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tng": {
+      "code": "tng",
+      "raw_name": "Northern Gabri",
+      "clean_name": "Northern Gabri",
+      "tag": "<tng>",
+      "files": [
+        "Northern_Gabri_tng_v3711.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ngb": {
+      "code": "ngb",
+      "raw_name": "Northern Ngbandi",
+      "clean_name": "Northern Ngbandi",
+      "tag": "<ngb>",
+      "files": [
+        "Northern_Ngbandi_ngb_v2682.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nse": {
+      "code": "nse",
+      "raw_name": "Nsenga",
+      "clean_name": "Nsenga",
+      "tag": "<nse>",
+      "files": [
+        "Nsenga_nse_v1308.csv",
+        "Nsenga_nse_v3614.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bud": {
+      "code": "bud",
+      "raw_name": "Ntcham",
+      "clean_name": "Ntcham",
+      "tag": "<bud>",
+      "files": [
+        "Ntcham_bud_v2235.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nus": {
+      "code": "nus",
+      "raw_name": "Nuer",
+      "clean_name": "Nuer",
+      "tag": "<nus>",
+      "files": [
+        "Nuer_nus_v2155.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "yas": {
+      "code": "yas",
+      "raw_name": "Nugunu",
+      "clean_name": "Nugunu",
+      "tag": "<yas>",
+      "files": [
+        "Nugunu_yas_v2624.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nwb": {
+      "code": "nwb",
+      "raw_name": "Nyabwa",
+      "clean_name": "Nyabwa",
+      "tag": "<nwb>",
+      "files": [
+        "Nyabwa_nwb_v2386.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nyy": {
+      "code": "nyy",
+      "raw_name": "Nyakyusa-Ngonde",
+      "clean_name": "Nyakyusa-Ngonde",
+      "tag": "<nyy>",
+      "files": [
+        "Nyakyusa-Ngonde_nyy_v2326.csv",
+        "Nyakyusa-Ngonde_nyy_v2399.csv",
+        "Nyakyusa-Ngonde_nyy_v2683.csv",
+        "Nyakyusa-Ngonde_nyy_v4049.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nle": {
+      "code": "nle",
+      "raw_name": "Nyala",
+      "clean_name": "Nyala",
+      "tag": "<nle>",
+      "files": [
+        "Nyala_nle_v4575.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mwn": {
+      "code": "mwn",
+      "raw_name": "Nyamwanga",
+      "clean_name": "Nyamwanga",
+      "tag": "<mwn>",
+      "files": [
+        "Nyamwanga_mwn_v3231.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nym": {
+      "code": "nym",
+      "raw_name": "Nyamwezi",
+      "clean_name": "Nyamwezi",
+      "tag": "<nym>",
+      "files": [
+        "Nyamwezi_nym_v3046.csv",
+        "Nyamwezi_nym_v4660.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nyj": {
+      "code": "nyj",
+      "raw_name": "Nyanga",
+      "clean_name": "Nyanga",
+      "tag": "<nyj>",
+      "files": [
+        "Nyanga_nyj_v4564.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nyb": {
+      "code": "nyb",
+      "raw_name": "Nyangbo",
+      "clean_name": "Nyangbo",
+      "tag": "<nyb>",
+      "files": [
+        "Nyangbo_nyb_v4674.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nya": {
+      "code": "nya",
+      "raw_name": "Nyanja",
+      "clean_name": "Nyanja",
+      "tag": "<nya>",
+      "files": [
+        "Nyanja_nya_v1068.csv",
+        "Nyanja_nya_v1618.csv",
+        "Nyanja_nya_v2972.csv",
+        "Nyanja_nya_v4491.csv",
+        "Nyanja_nya_v4767.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "nyn": {
+      "code": "nyn",
+      "raw_name": "Nyankole",
+      "clean_name": "Nyankole",
+      "tag": "<nyn>",
+      "files": [
+        "Nyankole_nyn_v1434.csv",
+        "Nyankole_nyn_v2996.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "rim": {
+      "code": "rim",
+      "raw_name": "Nyaturu",
+      "clean_name": "Nyaturu",
+      "tag": "<rim>",
+      "files": [
+        "Nyaturu_rim_v301.csv",
+        "Nyaturu_rim_v3369.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nih": {
+      "code": "nih",
+      "raw_name": "Nyiha, Tanzania",
+      "clean_name": "Nyiha, Tanzania",
+      "tag": "<nih>",
+      "files": [
+        "Nyiha,_Tanzania_nih_v3045.csv",
+        "Nyiha,_Tanzania_nih_v3145.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nuj": {
+      "code": "nuj",
+      "raw_name": "Nyole",
+      "clean_name": "Nyole",
+      "tag": "<nuj>",
+      "files": [
+        "Nyole_nuj_v2332.csv",
+        "Nyole_nuj_v4121.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nyd": {
+      "code": "nyd",
+      "raw_name": "Nyore",
+      "clean_name": "Nyore",
+      "tag": "<nyd>",
+      "files": [
+        "Nyore_nyd_v2882.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nyo": {
+      "code": "nyo",
+      "raw_name": "Nyoro",
+      "clean_name": "Nyoro",
+      "tag": "<nyo>",
+      "files": [
+        "Nyoro_nyo_v2515.csv",
+        "Nyoro_nyo_v2806.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nyu": {
+      "code": "nyu",
+      "raw_name": "Nyungwe",
+      "clean_name": "Nyungwe",
+      "tag": "<nyu>",
+      "files": [
+        "Nyungwe_nyu_v2347.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "nzi": {
+      "code": "nzi",
+      "raw_name": "Nzima",
+      "clean_name": "Nzima",
+      "tag": "<nzi>",
+      "files": [
+        "Nzima_nzi_v2717.csv",
+        "Nzima_nzi_v4529.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ann": {
+      "code": "ann",
+      "raw_name": "Obolo",
+      "clean_name": "Obolo",
+      "tag": "<ann>",
+      "files": [
+        "Obolo_ann_v1582.csv",
+        "Obolo_ann_v1587.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "odu": {
+      "code": "odu",
+      "raw_name": "Odual",
+      "clean_name": "Odual",
+      "tag": "<odu>",
+      "files": [
+        "Odual_odu_v2269.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "oku": {
+      "code": "oku",
+      "raw_name": "Oku",
+      "clean_name": "Oku",
+      "tag": "<oku>",
+      "files": [
+        "Oku_oku_v2622.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "omi": {
+      "code": "omi",
+      "raw_name": "Omi",
+      "clean_name": "Omi",
+      "tag": "<omi>",
+      "files": [
+        "Omi_omi_v3949.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bsc": {
+      "code": "bsc",
+      "raw_name": "Oniyan",
+      "clean_name": "Oniyan",
+      "tag": "<bsc>",
+      "files": [
+        "Oniyan_bsc_v1556.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gax": {
+      "code": "gax",
+      "raw_name": "Oromo, Arsi / Oromo, Borana-Arsi-Guji",
+      "clean_name": "Oromo, Arsi",
+      "tag": "<gax>",
+      "files": [
+        "Oromo,_Arsi_gax_v3173.csv",
+        "Oromo,_Arsi_gax_v3174.csv",
+        "Oromo,_Arsi_gax_v3497.csv",
+        "Oromo,_Borana-Arsi-Guji_gax_v2935.csv",
+        "Oromo,_Borana-Arsi-Guji_gax_v2943.csv",
+        "Oromo,_Borana-Arsi-Guji_gax_v3175.csv",
+        "Oromo,_Borana-Arsi-Guji_gax_v3176.csv",
+        "Oromo,_Borana-Arsi-Guji_gax_v4125.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kwm": {
+      "code": "kwm",
+      "raw_name": "Oshikwambi",
+      "clean_name": "Oshikwambi",
+      "tag": "<kwm>",
+      "files": [
+        "Oshikwambi_kwm_v4009.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "otr": {
+      "code": "otr",
+      "raw_name": "Otoro",
+      "clean_name": "Otoro",
+      "tag": "<otr>",
+      "files": [
+        "Otoro_otr_v3403.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lot": {
+      "code": "lot",
+      "raw_name": "Otuho",
+      "clean_name": "Otuho",
+      "tag": "<lot>",
+      "files": [
+        "Otuho_lot_v2154.csv",
+        "Otuho_lot_v3842.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "oyd": {
+      "code": "oyd",
+      "raw_name": "Oyda",
+      "clean_name": "Oyda",
+      "tag": "<oyd>",
+      "files": [
+        "Oyda_oyd_v4135.csv",
+        "Oyda_oyd_v4136.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sig": {
+      "code": "sig",
+      "raw_name": "Paasaal",
+      "clean_name": "Paasaal",
+      "tag": "<sig>",
+      "files": [
+        "Paasaal_sig_v1978.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "pnz": {
+      "code": "pnz",
+      "raw_name": "Pana",
+      "clean_name": "Pana",
+      "tag": "<pnz>",
+      "files": [
+        "Pana_pnz_v3333.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "pfe": {
+      "code": "pfe",
+      "raw_name": "Peere",
+      "clean_name": "Peere",
+      "tag": "<pfe>",
+      "files": [
+        "Peere_pfe_v1237.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "pcm": {
+      "code": "pcm",
+      "raw_name": "Pidgin, Nigerian",
+      "clean_name": "Pidgin, Nigerian",
+      "tag": "<pcm>",
+      "files": [
+        "Pidgin,_Nigerian_pcm_v2516.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "pny": {
+      "code": "pny",
+      "raw_name": "Pinyin",
+      "clean_name": "Pinyin",
+      "tag": "<pny>",
+      "files": [
+        "Pinyin_pny_v2159.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ktj": {
+      "code": "ktj",
+      "raw_name": "Plapo Krumen",
+      "clean_name": "Plapo Krumen",
+      "tag": "<ktj>",
+      "files": [
+        "Plapo_Krumen_ktj_v1518.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "poy": {
+      "code": "poy",
+      "raw_name": "Pogolo",
+      "clean_name": "Pogolo",
+      "tag": "<poy>",
+      "files": [
+        "Pogolo_poy_v4530.csv",
+        "Pogolo_poy_v944.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "pkb": {
+      "code": "pkb",
+      "raw_name": "Pokomo",
+      "clean_name": "Pokomo",
+      "tag": "<pkb>",
+      "files": [
+        "Pokomo_pkb_v2222.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kvj": {
+      "code": "kvj",
+      "raw_name": "Psikye",
+      "clean_name": "Psikye",
+      "tag": "<kvj>",
+      "files": [
+        "Psikye_kvj_v1515.csv",
+        "Psikye_kvj_v2638.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "fuf": {
+      "code": "fuf",
+      "raw_name": "Pular",
+      "clean_name": "Pular",
+      "tag": "<fuf>",
+      "files": [
+        "Pular_fuf_v1798.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "puu": {
+      "code": "puu",
+      "raw_name": "Punu (Ipounou)",
+      "clean_name": "Punu",
+      "tag": "<puu>",
+      "files": [
+        "Punu_(Ipounou)_puu_v3415.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lme": {
+      "code": "lme",
+      "raw_name": "Pévé",
+      "clean_name": "Pévé",
+      "tag": "<lme>",
+      "files": [
+        "Pévé_lme_v3304.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "pko": {
+      "code": "pko",
+      "raw_name": "Pökoot",
+      "clean_name": "Pökoot",
+      "tag": "<pko>",
+      "files": [
+        "Pökoot_pko_v2884.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "rel": {
+      "code": "rel",
+      "raw_name": "Rendille",
+      "clean_name": "Rendille",
+      "tag": "<rel>",
+      "files": [
+        "Rendille_rel_v2277.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cla": {
+      "code": "cla",
+      "raw_name": "Ron",
+      "clean_name": "Ron",
+      "tag": "<cla>",
+      "files": [
+        "Ron_cla_v3636.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "rng": {
+      "code": "rng",
+      "raw_name": "Ronga",
+      "clean_name": "Ronga",
+      "tag": "<rng>",
+      "files": [
+        "Ronga_rng_v2890.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "run": {
+      "code": "run",
+      "raw_name": "Rundi",
+      "clean_name": "Rundi",
+      "tag": "<run>",
+      "files": [
+        "Rundi_run_v2944.csv",
+        "Rundi_run_v3264.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "ruc": {
+      "code": "ruc",
+      "raw_name": "Ruuli",
+      "clean_name": "Ruuli",
+      "tag": "<ruc>",
+      "files": [
+        "Ruuli_ruc_v4577.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "rwk": {
+      "code": "rwk",
+      "raw_name": "Rwa",
+      "clean_name": "Rwa",
+      "tag": "<rwk>",
+      "files": [
+        "Rwa_rwk_v3047.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kin": {
+      "code": "kin",
+      "raw_name": "Rwandan",
+      "clean_name": "Rwandan",
+      "tag": "<kin>",
+      "files": [
+        "Rwandan_kin_v351.csv",
+        "Rwandan_kin_v387.csv",
+        "Rwandan_kin_v395.csv",
+        "Rwandan_kin_v430.csv",
+        "Rwandan_kin_v4638.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "sav": {
+      "code": "sav",
+      "raw_name": "Saafi-Saafi",
+      "clean_name": "Saafi-Saafi",
+      "tag": "<sav>",
+      "files": [
+        "Saafi-Saafi_sav_v2443.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lsm": {
+      "code": "lsm",
+      "raw_name": "Saamia",
+      "clean_name": "Saamia",
+      "tag": "<lsm>",
+      "files": [
+        "Saamia_lsm_v2365.csv",
+        "Saamia_lsm_v2366.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "saa": {
+      "code": "saa",
+      "raw_name": "Saba",
+      "clean_name": "Saba",
+      "tag": "<saa>",
+      "files": [
+        "Saba_saa_v4396.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sbk": {
+      "code": "sbk",
+      "raw_name": "Safwa",
+      "clean_name": "Safwa",
+      "tag": "<sbk>",
+      "files": [
+        "Safwa_sbk_v3462.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sbm": {
+      "code": "sbm",
+      "raw_name": "Sagala",
+      "clean_name": "Sagala",
+      "tag": "<sbm>",
+      "files": [
+        "Sagala_sbm_v4632.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tga": {
+      "code": "tga",
+      "raw_name": "Sagalla",
+      "clean_name": "Sagalla",
+      "tag": "<tga>",
+      "files": [
+        "Sagalla_tga_v3618.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ssy": {
+      "code": "ssy",
+      "raw_name": "Saho",
+      "clean_name": "Saho",
+      "tag": "<ssy>",
+      "files": [
+        "Saho_ssy_v3917.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "shq": {
+      "code": "shq",
+      "raw_name": "Sala",
+      "clean_name": "Sala",
+      "tag": "<shq>",
+      "files": [
+        "Sala_shq_v4497.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ndi": {
+      "code": "ndi",
+      "raw_name": "Samba Leko",
+      "clean_name": "Samba Leko",
+      "tag": "<ndi>",
+      "files": [
+        "Samba_Leko_ndi_v1118.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "saq": {
+      "code": "saq",
+      "raw_name": "Samburu",
+      "clean_name": "Samburu",
+      "tag": "<saq>",
+      "files": [
+        "Samburu_saq_v3000.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sbd": {
+      "code": "sbd",
+      "raw_name": "Samo, Southern",
+      "clean_name": "Samo, Southern",
+      "tag": "<sbd>",
+      "files": [
+        "Samo,_Southern_sbd_v3059.csv",
+        "Samo,_Southern_sbd_v3315.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xsn": {
+      "code": "xsn",
+      "raw_name": "Sanga",
+      "clean_name": "Sanga",
+      "tag": "<xsn>",
+      "files": [
+        "Sanga_xsn_v3433.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sag": {
+      "code": "sag",
+      "raw_name": "Sango",
+      "clean_name": "Sango",
+      "tag": "<sag>",
+      "files": [
+        "Sango_sag_v1285.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "sbp": {
+      "code": "sbp",
+      "raw_name": "Sangu",
+      "clean_name": "Sangu",
+      "tag": "<sbp>",
+      "files": [
+        "Sangu_sbp_v2815.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "msc": {
+      "code": "msc",
+      "raw_name": "Sankaran Maninka",
+      "clean_name": "Sankaran Maninka",
+      "tag": "<msc>",
+      "files": [
+        "Sankaran_Maninka_msc_v1555.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mwm": {
+      "code": "mwm",
+      "raw_name": "Sar",
+      "clean_name": "Sar",
+      "tag": "<mwm>",
+      "files": [
+        "Sar_mwm_v445.csv",
+        "Sar_mwm_v446.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "asj": {
+      "code": "asj",
+      "raw_name": "Sari",
+      "clean_name": "Sari",
+      "tag": "<asj>",
+      "files": [
+        "Sari_asj_v3834.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sgw": {
+      "code": "sgw",
+      "raw_name": "Sebat Bet Gurage",
+      "clean_name": "Sebat Bet Gurage",
+      "tag": "<sgw>",
+      "files": [
+        "Sebat_Bet_Gurage_sgw_v3203.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sfw": {
+      "code": "sfw",
+      "raw_name": "Sehwi",
+      "clean_name": "Sehwi",
+      "tag": "<sfw>",
+      "files": [
+        "Sehwi_sfw_v2710.csv",
+        "Sehwi_sfw_v4630.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lip": {
+      "code": "lip",
+      "raw_name": "Sekpele",
+      "clean_name": "Sekpele",
+      "tag": "<lip>",
+      "files": [
+        "Sekpele_lip_v1773.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "snw": {
+      "code": "snw",
+      "raw_name": "Selee",
+      "clean_name": "Selee",
+      "tag": "<snw>",
+      "files": [
+        "Selee_snw_v1796.csv",
+        "Selee_snw_v4728.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "seh": {
+      "code": "seh",
+      "raw_name": "Sena",
+      "clean_name": "Sena",
+      "tag": "<seh>",
+      "files": [
+        "Sena_seh_v1378.csv",
+        "Sena_seh_v2932.csv",
+        "Sena_seh_v2933.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "swk": {
+      "code": "swk",
+      "raw_name": "Sena (Malawi)",
+      "clean_name": "Sena",
+      "tag": "<swk>",
+      "files": [
+        "Sena_(Malawi)_swk_v2973.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "srr": {
+      "code": "srr",
+      "raw_name": "Serer (Senegal)",
+      "clean_name": "Serer",
+      "tag": "<srr>",
+      "files": [
+        "Serer_(Senegal)_srr_v3751.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "crs": {
+      "code": "crs",
+      "raw_name": "Seselwa Creole French",
+      "clean_name": "Seselwa Creole French",
+      "tag": "<crs>",
+      "files": [
+        "Seselwa_Creole_French_crs_v1053.csv",
+        "Seselwa_Creole_French_crs_v1054.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "tsn": {
+      "code": "tsn",
+      "raw_name": "Setswana",
+      "clean_name": "Setswana",
+      "tag": "<tsn>",
+      "files": [
+        "Setswana_tsn_v1615.csv",
+        "Setswana_tsn_v185.csv",
+        "Setswana_tsn_v2608.csv",
+        "Setswana_tsn_v278.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "sqa": {
+      "code": "sqa",
+      "raw_name": "Shama-Sambuga",
+      "clean_name": "Shama-Sambuga",
+      "tag": "<sqa>",
+      "files": [
+        "Shama-Sambuga_sqa_v4499.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ksb": {
+      "code": "ksb",
+      "raw_name": "Shambala",
+      "clean_name": "Shambala",
+      "tag": "<ksb>",
+      "files": [
+        "Shambala_ksb_v1811.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "moy": {
+      "code": "moy",
+      "raw_name": "Shekkacho",
+      "clean_name": "Shekkacho",
+      "tag": "<moy>",
+      "files": [
+        "Shekkacho_moy_v3179.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "shr": {
+      "code": "shr",
+      "raw_name": "Shi",
+      "clean_name": "Shi",
+      "tag": "<shr>",
+      "files": [
+        "Shi_shr_v3953.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "shk": {
+      "code": "shk",
+      "raw_name": "Shilluk",
+      "clean_name": "Shilluk",
+      "tag": "<shk>",
+      "files": [
+        "Shilluk_shk_v2156.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sna": {
+      "code": "sna",
+      "raw_name": "Shona",
+      "clean_name": "Shona",
+      "tag": "<sna>",
+      "files": [
+        "Shona_sna_v1931.csv",
+        "Shona_sna_v1960.csv",
+        "Shona_sna_v2245.csv",
+        "Shona_sna_v2248.csv",
+        "Shona_sna_v2262.csv",
+        "Shona_sna_v32.csv",
+        "Shona_sna_v4046.csv",
+        "Shona_sna_v4498.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "bcv": {
+      "code": "bcv",
+      "raw_name": "Shoo-Minda-Nye",
+      "clean_name": "Shoo-Minda-Nye",
+      "tag": "<bcv>",
+      "files": [
+        "Shoo-Minda-Nye_bcv_v4448.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sid": {
+      "code": "sid",
+      "raw_name": "Sidamo",
+      "clean_name": "Sidamo",
+      "tag": "<sid>",
+      "files": [
+        "Sidamo_sid_v3204.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "sil": {
+      "code": "sil",
+      "raw_name": "Sisaala, Tumulung",
+      "clean_name": "Sisaala, Tumulung",
+      "tag": "<sil>",
+      "files": [
+        "Sisaala,_Tumulung_sil_v2553.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "akp": {
+      "code": "akp",
+      "raw_name": "Siwu",
+      "clean_name": "Siwu",
+      "tag": "<akp>",
+      "files": [
+        "Siwu_akp_v1738.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xog": {
+      "code": "xog",
+      "raw_name": "Soga",
+      "clean_name": "Soga",
+      "tag": "<xog>",
+      "files": [
+        "Soga_xog_v1256.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sby": {
+      "code": "sby",
+      "raw_name": "Soli",
+      "clean_name": "Soli",
+      "tag": "<sby>",
+      "files": [
+        "Soli_sby_v2447.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "som": {
+      "code": "som",
+      "raw_name": "Somali",
+      "clean_name": "Somali",
+      "tag": "<som>",
+      "files": [
+        "Somali_som_v2934.csv",
+        "Somali_som_v4029.csv",
+        "Somali_som_v87.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "sor": {
+      "code": "sor",
+      "raw_name": "Somrai",
+      "clean_name": "Somrai",
+      "tag": "<sor>",
+      "files": [
+        "Somrai_sor_v2630.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sop": {
+      "code": "sop",
+      "raw_name": "Songe",
+      "clean_name": "Songe",
+      "tag": "<sop>",
+      "files": [
+        "Songe_sop_v1494.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "nso": {
+      "code": "nso",
+      "raw_name": "Sotho, Northern",
+      "clean_name": "Sotho, Northern",
+      "tag": "<nso>",
+      "files": [
+        "Sotho,_Northern_nso_v124.csv",
+        "Sotho,_Northern_nso_v256.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "giz": {
+      "code": "giz",
+      "raw_name": "South Giziga",
+      "clean_name": "South Giziga",
+      "tag": "<giz>",
+      "files": [
+        "South_Giziga_giz_v550.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nbl": {
+      "code": "nbl",
+      "raw_name": "South Ndebele",
+      "clean_name": "South Ndebele",
+      "tag": "<nbl>",
+      "files": [
+        "South_Ndebele_nbl_v450.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "biv": {
+      "code": "biv",
+      "raw_name": "Southern Birifor",
+      "clean_name": "Southern Birifor",
+      "tag": "<biv>",
+      "files": [
+        "Southern_Birifor_biv_v2148.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dga": {
+      "code": "dga",
+      "raw_name": "Southern Dagaare",
+      "clean_name": "Southern Dagaare",
+      "tag": "<dga>",
+      "files": [
+        "Southern_Dagaare_dga_v2268.csv",
+        "Southern_Dagaare_dga_v4573.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kss": {
+      "code": "kss",
+      "raw_name": "Southern Kisi",
+      "clean_name": "Southern Kisi",
+      "tag": "<kss>",
+      "files": [
+        "Southern_Kisi_kss_v2241.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nnw": {
+      "code": "nnw",
+      "raw_name": "Southern Nuni",
+      "clean_name": "Southern Nuni",
+      "tag": "<nnw>",
+      "files": [
+        "Southern_Nuni_nnw_v1808.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sot": {
+      "code": "sot",
+      "raw_name": "Southern Sotho",
+      "clean_name": "Southern Sotho",
+      "tag": "<sot>",
+      "files": [
+        "Southern_Sotho_sot_v273.csv",
+        "Southern_Sotho_sot_v274.csv",
+        "Southern_Sotho_sot_v3601.csv",
+        "Southern_Sotho_sot_v3845.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "wib": {
+      "code": "wib",
+      "raw_name": "Southern Toussian",
+      "clean_name": "Southern Toussian",
+      "tag": "<wib>",
+      "files": [
+        "Southern_Toussian_wib_v1311.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sxb": {
+      "code": "sxb",
+      "raw_name": "Suba",
+      "clean_name": "Suba",
+      "tag": "<sxb>",
+      "files": [
+        "Suba_sxb_v484.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ssc": {
+      "code": "ssc",
+      "raw_name": "Suba-Simbiti",
+      "clean_name": "Suba-Simbiti",
+      "tag": "<ssc>",
+      "files": [
+        "Suba-Simbiti_ssc_v2997.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "suk": {
+      "code": "suk",
+      "raw_name": "Sukuma",
+      "clean_name": "Sukuma",
+      "tag": "<suk>",
+      "files": [
+        "Sukuma_suk_v1512.csv",
+        "Sukuma_suk_v1517.csv",
+        "Sukuma_suk_v2684.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "spp": {
+      "code": "spp",
+      "raw_name": "Supyire Senoufo",
+      "clean_name": "Supyire Senoufo",
+      "tag": "<spp>",
+      "files": [
+        "Supyire_Senoufo_spp_v1145.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "suq": {
+      "code": "suq",
+      "raw_name": "Suri",
+      "clean_name": "Suri",
+      "tag": "<suq>",
+      "files": [
+        "Suri_suq_v3659.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sus": {
+      "code": "sus",
+      "raw_name": "Susu (Arabic Script) / Susu (Roman script)",
+      "clean_name": "Susu",
+      "tag": "<sus>",
+      "files": [
+        "Susu_(Arabic_Script)_sus_v1379.csv",
+        "Susu_(Roman_script)_sus_v2066.csv",
+        "Susu_(Roman_script)_sus_v893.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "swh": {
+      "code": "swh",
+      "raw_name": "Swahili",
+      "clean_name": "Swahili",
+      "tag": "<swh>",
+      "files": [
+        "Swahili_swh_v1627.csv",
+        "Swahili_swh_v164.csv",
+        "Swahili_swh_v1817.csv",
+        "Swahili_swh_v1818.csv",
+        "Swahili_swh_v2144.csv",
+        "Swahili_swh_v2484.csv",
+        "Swahili_swh_v2936.csv",
+        "Swahili_swh_v2937.csv",
+        "Swahili_swh_v3048.csv",
+        "Swahili_swh_v3049.csv",
+        "Swahili_swh_v393.csv",
+        "Swahili_swh_v4369.csv",
+        "Swahili_swh_v74.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "ssw": {
+      "code": "ssw",
+      "raw_name": "Swazi",
+      "clean_name": "Swazi",
+      "tag": "<ssw>",
+      "files": [
+        "Swazi_ssw_v604.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "sef": {
+      "code": "sef",
+      "raw_name": "Sénoufo, Cebaara",
+      "clean_name": "Sénoufo, Cebaara",
+      "tag": "<sef>",
+      "files": [
+        "Sénoufo,_Cebaara_sef_v3032.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "sev": {
+      "code": "sev",
+      "raw_name": "Sénoufo, Nyarafolo",
+      "clean_name": "Sénoufo, Nyarafolo",
+      "tag": "<sev>",
+      "files": [
+        "Sénoufo,_Nyarafolo_sev_v2990.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tgw": {
+      "code": "tgw",
+      "raw_name": "Sénoufo, Tagwana",
+      "clean_name": "Sénoufo, Tagwana",
+      "tag": "<tgw>",
+      "files": [
+        "Sénoufo,_Tagwana_tgw_v3033.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tap": {
+      "code": "tap",
+      "raw_name": "Taabwa",
+      "clean_name": "Taabwa",
+      "tag": "<tap>",
+      "files": [
+        "Taabwa_tap_v4387.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tcd": {
+      "code": "tcd",
+      "raw_name": "Tafi",
+      "clean_name": "Tafi",
+      "tag": "<tcd>",
+      "files": [
+        "Tafi_tcd_v3070.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dav": {
+      "code": "dav",
+      "raw_name": "Taita",
+      "clean_name": "Taita",
+      "tag": "<dav>",
+      "files": [
+        "Taita_dav_v2138.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tke": {
+      "code": "tke",
+      "raw_name": "Takwane",
+      "clean_name": "Takwane",
+      "tag": "<tke>",
+      "files": [
+        "Takwane_tke_v1426.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tlj": {
+      "code": "tlj",
+      "raw_name": "Talinga-Bwisi",
+      "clean_name": "Talinga-Bwisi",
+      "tag": "<tlj>",
+      "files": [
+        "Talinga-Bwisi_tlj_v1797.csv",
+        "Talinga-Bwisi_tlj_v4129.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "taq": {
+      "code": "taq",
+      "raw_name": "Tamasheq",
+      "clean_name": "Tamasheq",
+      "tag": "<taq>",
+      "files": [
+        "Tamasheq_taq_v1144.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "tpm": {
+      "code": "tpm",
+      "raw_name": "Tampulma",
+      "clean_name": "Tampulma",
+      "tag": "<tpm>",
+      "files": [
+        "Tampulma_tpm_v1804.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tan": {
+      "code": "tan",
+      "raw_name": "Tangale",
+      "clean_name": "Tangale",
+      "tag": "<tan>",
+      "files": [
+        "Tangale_tan_v3241.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "rif": {
+      "code": "rif",
+      "raw_name": "Tarifit",
+      "clean_name": "Tarifit",
+      "tag": "<rif>",
+      "files": [
+        "Tarifit_rif_v2807.csv",
+        "Tarifit_rif_v3113.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "shi": {
+      "code": "shi",
+      "raw_name": "Tashelhayt",
+      "clean_name": "Tashelhayt",
+      "tag": "<shi>",
+      "files": [
+        "Tashelhayt_shi_v3161.csv",
+        "Tashelhayt_shi_v3162.csv",
+        "Tashelhayt_shi_v4058.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "tvs": {
+      "code": "tvs",
+      "raw_name": "Taveta",
+      "clean_name": "Taveta",
+      "tag": "<tvs>",
+      "files": [
+        "Taveta_tvs_v3353.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tyx": {
+      "code": "tyx",
+      "raw_name": "Teke-Tyee",
+      "clean_name": "Teke-Tyee",
+      "tag": "<tyx>",
+      "files": [
+        "Teke-Tyee_tyx_v4276.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kdh": {
+      "code": "kdh",
+      "raw_name": "Tem",
+      "clean_name": "Tem",
+      "tag": "<kdh>",
+      "files": [
+        "Tem_kdh_v1384.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tbt": {
+      "code": "tbt",
+      "raw_name": "Tembo",
+      "clean_name": "Tembo",
+      "tag": "<tbt>",
+      "files": [
+        "Tembo_tbt_v3997.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tex": {
+      "code": "tex",
+      "raw_name": "Tennet",
+      "clean_name": "Tennet",
+      "tag": "<tex>",
+      "files": [
+        "Tennet_tex_v2576.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ted": {
+      "code": "ted",
+      "raw_name": "Tepo Krumen",
+      "clean_name": "Tepo Krumen",
+      "tag": "<ted>",
+      "files": [
+        "Tepo_Krumen_ted_v1317.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ttr": {
+      "code": "ttr",
+      "raw_name": "Tera",
+      "clean_name": "Tera",
+      "tag": "<ttr>",
+      "files": [
+        "Tera_ttr_v2346.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "teo": {
+      "code": "teo",
+      "raw_name": "Teso",
+      "clean_name": "Teso",
+      "tag": "<teo>",
+      "files": [
+        "Teso_teo_v2938.csv",
+        "Teso_teo_v436.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "tll": {
+      "code": "tll",
+      "raw_name": "Tetela",
+      "clean_name": "Tetela",
+      "tag": "<tll>",
+      "files": [
+        "Tetela_tll_v2685.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "thk": {
+      "code": "thk",
+      "raw_name": "Tharaka",
+      "clean_name": "Tharaka",
+      "tag": "<thk>",
+      "files": [
+        "Tharaka_thk_v2206.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lth": {
+      "code": "lth",
+      "raw_name": "Thur",
+      "clean_name": "Thur",
+      "tag": "<lth>",
+      "files": [
+        "Thur_lth_v4034.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "nza": {
+      "code": "nza",
+      "raw_name": "Tigon Mbembe",
+      "clean_name": "Tigon Mbembe",
+      "tag": "<nza>",
+      "files": [
+        "Tigon_Mbembe_nza_v1989.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tir": {
+      "code": "tir",
+      "raw_name": "Tigrinya",
+      "clean_name": "Tigrinya",
+      "tag": "<tir>",
+      "files": [
+        "Tigrinya_tir_v2998.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "tem": {
+      "code": "tem",
+      "raw_name": "Timne",
+      "clean_name": "Timne",
+      "tag": "<tem>",
+      "files": [
+        "Timne_tem_v2952.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tiv": {
+      "code": "tiv",
+      "raw_name": "Tiv",
+      "clean_name": "Tiv",
+      "tag": "<tiv>",
+      "files": [
+        "Tiv_tiv_v2575.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "tod": {
+      "code": "tod",
+      "raw_name": "Toma",
+      "clean_name": "Toma",
+      "tag": "<tod>",
+      "files": [
+        "Toma_tod_v1380.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tog": {
+      "code": "tog",
+      "raw_name": "Tonga (Nyasa)",
+      "clean_name": "Tonga",
+      "tag": "<tog>",
+      "files": [
+        "Tonga_(Nyasa)_tog_v2974.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "toi": {
+      "code": "toi",
+      "raw_name": "Tonga (Zambia)",
+      "clean_name": "Tonga",
+      "tag": "<toi>",
+      "files": [
+        "Tonga_(Zambia)_toi_v2956.csv",
+        "Tonga_(Zambia)_toi_v984.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "tsa": {
+      "code": "tsa",
+      "raw_name": "Tsaangi",
+      "clean_name": "Tsaangi",
+      "tag": "<tsa>",
+      "files": [
+        "Tsaangi_tsa_v3242.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "kdl": {
+      "code": "kdl",
+      "raw_name": "Tsikimba",
+      "clean_name": "Tsikimba",
+      "tag": "<kdl>",
+      "files": [
+        "Tsikimba_kdl_v426.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tsw": {
+      "code": "tsw",
+      "raw_name": "Tsishingini",
+      "clean_name": "Tsishingini",
+      "tag": "<tsw>",
+      "files": [
+        "Tsishingini_tsw_v429.csv",
+        "Tsishingini_tsw_v4331.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tsv": {
+      "code": "tsv",
+      "raw_name": "Tsogo",
+      "clean_name": "Tsogo",
+      "tag": "<tsv>",
+      "files": [
+        "Tsogo_tsv_v3924.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tso": {
+      "code": "tso",
+      "raw_name": "Tsonga",
+      "clean_name": "Tsonga",
+      "tag": "<tso>",
+      "files": [
+        "Tsonga_tso_v184.csv",
+        "Tsonga_tso_v2939.csv",
+        "Tsonga_tso_v607.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "lto": {
+      "code": "lto",
+      "raw_name": "Tsotso",
+      "clean_name": "Tsotso",
+      "tag": "<lto>",
+      "files": [
+        "Tsotso_lto_v2928.csv",
+        "Tsotso_lto_v2941.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tsc": {
+      "code": "tsc",
+      "raw_name": "Tswa",
+      "clean_name": "Tswa",
+      "tag": "<tsc>",
+      "files": [
+        "Tswa_tsc_v2902.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "thv": {
+      "code": "thv",
+      "raw_name": "Tuareg",
+      "clean_name": "Tuareg",
+      "tag": "<thv>",
+      "files": [
+        "Tuareg_thv_v2424.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ttq": {
+      "code": "ttq",
+      "raw_name": "Tuareg",
+      "clean_name": "Tuareg",
+      "tag": "<ttq>",
+      "files": [
+        "Tuareg_ttq_v1309.csv",
+        "Tuareg_ttq_v1321.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bag": {
+      "code": "bag",
+      "raw_name": "Tuki",
+      "clean_name": "Tuki",
+      "tag": "<bag>",
+      "files": [
+        "Tuki_bag_v4514.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tul": {
+      "code": "tul",
+      "raw_name": "Tula",
+      "clean_name": "Tula",
+      "tag": "<tul>",
+      "files": [
+        "Tula_tul_v1920.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tum": {
+      "code": "tum",
+      "raw_name": "Tumbuka",
+      "clean_name": "Tumbuka",
+      "tag": "<tum>",
+      "files": [
+        "Tumbuka_tum_v1961.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "tvu": {
+      "code": "tvu",
+      "raw_name": "Tunen",
+      "clean_name": "Tunen",
+      "tag": "<tvu>",
+      "files": [
+        "Tunen_tvu_v2623.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tui": {
+      "code": "tui",
+      "raw_name": "Tupuri",
+      "clean_name": "Tupuri",
+      "tag": "<tui>",
+      "files": [
+        "Tupuri_tui_v3691.csv",
+        "Tupuri_tui_v892.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "tuv": {
+      "code": "tuv",
+      "raw_name": "Turkana",
+      "clean_name": "Turkana",
+      "tag": "<tuv>",
+      "files": [
+        "Turkana_tuv_v2657.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "bov": {
+      "code": "bov",
+      "raw_name": "Tuwuli",
+      "clean_name": "Tuwuli",
+      "tag": "<bov>",
+      "files": [
+        "Tuwuli_bov_v1752.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "twi": {
+      "code": "twi",
+      "raw_name": "Twi",
+      "clean_name": "Twi",
+      "tag": "<twi>",
+      "files": [
+        "Twi_twi_v1461.csv",
+        "Twi_twi_v1631.csv",
+        "Twi_twi_v1861.csv",
+        "Twi_twi_v3439.csv",
+        "Twi_twi_v3440.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "kcg": {
+      "code": "kcg",
+      "raw_name": "Tyap",
+      "clean_name": "Tyap",
+      "tag": "<kcg>",
+      "files": [
+        "Tyap_kcg_v1921.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "udu": {
+      "code": "udu",
+      "raw_name": "Uduk",
+      "clean_name": "Uduk",
+      "tag": "<udu>",
+      "files": [
+        "Uduk_udu_v917.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "umb": {
+      "code": "umb",
+      "raw_name": "Umbundu",
+      "clean_name": "Umbundu",
+      "tag": "<umb>",
+      "files": [
+        "Umbundu_umb_v2686.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "urh": {
+      "code": "urh",
+      "raw_name": "Urhobo",
+      "clean_name": "Urhobo",
+      "tag": "<urh>",
+      "files": [
+        "Urhobo_urh_v2616.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "vag": {
+      "code": "vag",
+      "raw_name": "Vagla",
+      "clean_name": "Vagla",
+      "tag": "<vag>",
+      "files": [
+        "Vagla_vag_v1938.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "vai": {
+      "code": "vai",
+      "raw_name": "Vai",
+      "clean_name": "Vai",
+      "tag": "<vai>",
+      "files": [
+        "Vai_vai_v2834.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ven": {
+      "code": "ven",
+      "raw_name": "Venda",
+      "clean_name": "Venda",
+      "tag": "<ven>",
+      "files": [
+        "Venda_ven_v280.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "bav": {
+      "code": "bav",
+      "raw_name": "Vengo",
+      "clean_name": "Vengo",
+      "tag": "<bav>",
+      "files": [
+        "Vengo_bav_v1742.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ver": {
+      "code": "ver",
+      "raw_name": "Verre",
+      "clean_name": "Verre",
+      "tag": "<ver>",
+      "files": [
+        "Verre_ver_v4566.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "vid": {
+      "code": "vid",
+      "raw_name": "Vidunda",
+      "clean_name": "Vidunda",
+      "tag": "<vid>",
+      "files": [
+        "Vidunda_vid_v1221.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "vif": {
+      "code": "vif",
+      "raw_name": "Vili",
+      "clean_name": "Vili",
+      "tag": "<vif>",
+      "files": [
+        "Vili_vif_v2987.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "vun": {
+      "code": "vun",
+      "raw_name": "Vunjo",
+      "clean_name": "Vunjo",
+      "tag": "<vun>",
+      "files": [
+        "Vunjo_vun_v1812.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "vut": {
+      "code": "vut",
+      "raw_name": "Vute",
+      "clean_name": "Vute",
+      "tag": "<vut>",
+      "files": [
+        "Vute_vut_v887.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "wbi": {
+      "code": "wbi",
+      "raw_name": "Vwanji",
+      "clean_name": "Vwanji",
+      "tag": "<wbi>",
+      "files": [
+        "Vwanji_wbi_v2395.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "wja": {
+      "code": "wja",
+      "raw_name": "Waja",
+      "clean_name": "Waja",
+      "tag": "<wja>",
+      "files": [
+        "Waja_wja_v4084.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "cou": {
+      "code": "cou",
+      "raw_name": "Wamey",
+      "clean_name": "Wamey",
+      "tag": "<cou>",
+      "files": [
+        "Wamey_cou_v2254.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "mfi": {
+      "code": "mfi",
+      "raw_name": "Wandala",
+      "clean_name": "Wandala",
+      "tag": "<mfi>",
+      "files": [
+        "Wandala_mfi_v1788.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lwg": {
+      "code": "lwg",
+      "raw_name": "Wanga",
+      "clean_name": "Wanga",
+      "tag": "<lwg>",
+      "files": [
+        "Wanga_lwg_v2656.csv",
+        "Wanga_lwg_v2659.csv",
+        "Wanga_lwg_v4574.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jub": {
+      "code": "jub",
+      "raw_name": "Wannu",
+      "clean_name": "Wannu",
+      "tag": "<jub>",
+      "files": [
+        "Wannu_jub_v4533.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "weh": {
+      "code": "weh",
+      "raw_name": "Weh",
+      "clean_name": "Weh",
+      "tag": "<weh>",
+      "files": [
+        "Weh_weh_v3237.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gaz": {
+      "code": "gaz",
+      "raw_name": "West Central Oromo",
+      "clean_name": "West Central Oromo",
+      "tag": "<gaz>",
+      "files": [
+        "West_Central_Oromo_gaz_v3202.csv",
+        "West_Central_Oromo_gaz_v3725.csv",
+        "West_Central_Oromo_gaz_v4456.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "lia": {
+      "code": "lia",
+      "raw_name": "West-Central Limba",
+      "clean_name": "West-Central Limba",
+      "tag": "<lia>",
+      "files": [
+        "West-Central_Limba_lia_v2949.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "krw": {
+      "code": "krw",
+      "raw_name": "Western Krahn",
+      "clean_name": "Western Krahn",
+      "tag": "<krw>",
+      "files": [
+        "Western_Krahn_krw_v2435.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "fuh": {
+      "code": "fuh",
+      "raw_name": "Western Niger Fulfulde",
+      "clean_name": "Western Niger Fulfulde",
+      "tag": "<fuh>",
+      "files": [
+        "Western_Niger_Fulfulde_fuh_v2380.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "wal": {
+      "code": "wal",
+      "raw_name": "Wolaytta",
+      "clean_name": "Wolaytta",
+      "tag": "<wal>",
+      "files": [
+        "Wolaytta_wal_v3205.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "wof": {
+      "code": "wof",
+      "raw_name": "Wolof (Gambia)",
+      "clean_name": "Wolof",
+      "tag": "<wof>",
+      "files": [
+        "Wolof_(Gambia)_wof_v3448.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "wol": {
+      "code": "wol",
+      "raw_name": "Wolof (Senegal)",
+      "clean_name": "Wolof",
+      "tag": "<wol>",
+      "files": [
+        "Wolof_(Senegal)_wol_v3338.csv",
+        "Wolof_(Senegal)_wol_v4633.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "wob": {
+      "code": "wob",
+      "raw_name": "Wè Northern",
+      "clean_name": "Wè Northern",
+      "tag": "<wob>",
+      "files": [
+        "Wè_Northern_wob_v1940.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xan": {
+      "code": "xan",
+      "raw_name": "Xamtanga",
+      "clean_name": "Xamtanga",
+      "tag": "<xan>",
+      "files": [
+        "Xamtanga_xan_v3182.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "xho": {
+      "code": "xho",
+      "raw_name": "Xhosa",
+      "clean_name": "Xhosa",
+      "tag": "<xho>",
+      "files": [
+        "Xhosa_xho_v281.csv",
+        "Xhosa_xho_v282.csv",
+        "Xhosa_xho_v3526.csv",
+        "Xhosa_xho_v3602.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "iyx": {
+      "code": "iyx",
+      "raw_name": "Yaka",
+      "clean_name": "Yaka",
+      "tag": "<iyx>",
+      "files": [
+        "Yaka_iyx_v3035.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yaf": {
+      "code": "yaf",
+      "raw_name": "Yaka",
+      "clean_name": "Yaka",
+      "tag": "<yaf>",
+      "files": [
+        "Yaka_yaf_v3951.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yba": {
+      "code": "yba",
+      "raw_name": "Yala",
+      "clean_name": "Yala",
+      "tag": "<yba>",
+      "files": [
+        "Yala_yba_v3079.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yal": {
+      "code": "yal",
+      "raw_name": "Yalunka",
+      "clean_name": "Yalunka",
+      "tag": "<yal>",
+      "files": [
+        "Yalunka_yal_v2992.csv",
+        "Yalunka_yal_v620.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yam": {
+      "code": "yam",
+      "raw_name": "Yamba",
+      "clean_name": "Yamba",
+      "tag": "<yam>",
+      "files": [
+        "Yamba_yam_v1160.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yat": {
+      "code": "yat",
+      "raw_name": "Yambeta",
+      "clean_name": "Yambeta",
+      "tag": "<yat>",
+      "files": [
+        "Yambeta_yat_v2257.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yav": {
+      "code": "yav",
+      "raw_name": "Yangben",
+      "clean_name": "Yangben",
+      "tag": "<yav>",
+      "files": [
+        "Yangben_yav_v4521.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yns": {
+      "code": "yns",
+      "raw_name": "Yansi",
+      "clean_name": "Yansi",
+      "tag": "<yns>",
+      "files": [
+        "Yansi_yns_v3929.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yao": {
+      "code": "yao",
+      "raw_name": "Yao",
+      "clean_name": "Yao",
+      "tag": "<yao>",
+      "files": [
+        "Yao_yao_v1437.csv",
+        "Yao_yao_v2793.csv",
+        "Yao_yao_v4122.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "yre": {
+      "code": "yre",
+      "raw_name": "Yaouré",
+      "clean_name": "Yaouré",
+      "tag": "<yre>",
+      "files": [
+        "Yaouré_yre_v938.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ybb": {
+      "code": "ybb",
+      "raw_name": "Yemba",
+      "clean_name": "Yemba",
+      "tag": "<ybb>",
+      "files": [
+        "Yemba_ybb_v3238.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "jnj": {
+      "code": "jnj",
+      "raw_name": "Yemsa",
+      "clean_name": "Yemsa",
+      "tag": "<jnj>",
+      "files": [
+        "Yemsa_jnj_v4131.csv",
+        "Yemsa_jnj_v4132.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gud": {
+      "code": "gud",
+      "raw_name": "Yocoboué Dida",
+      "clean_name": "Yocoboué Dida",
+      "tag": "<gud>",
+      "files": [
+        "Yocoboué_Dida_gud_v839.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yom": {
+      "code": "yom",
+      "raw_name": "Yombe",
+      "clean_name": "Yombe",
+      "tag": "<yom>",
+      "files": [
+        "Yombe_yom_v1617.csv",
+        "Yombe_yom_v3928.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "yor": {
+      "code": "yor",
+      "raw_name": "Yoruba",
+      "clean_name": "Yoruba",
+      "tag": "<yor>",
+      "files": [
+        "Yoruba_yor_v207.csv",
+        "Yoruba_yor_v2754.csv",
+        "Yoruba_yor_v911.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "zak": {
+      "code": "zak",
+      "raw_name": "Zanaki",
+      "clean_name": "Zanaki",
+      "tag": "<zak>",
+      "files": [
+        "Zanaki_zak_v3771.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "zne": {
+      "code": "zne",
+      "raw_name": "Zande",
+      "clean_name": "Zande",
+      "tag": "<zne>",
+      "files": [
+        "Zande_zne_v2922.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "zaj": {
+      "code": "zaj",
+      "raw_name": "Zaramo - Zalamo",
+      "clean_name": "Zaramo - Zalamo",
+      "tag": "<zaj>",
+      "files": [
+        "Zaramo_-_Zalamo_zaj_v2373.csv",
+        "Zaramo_-_Zalamo_zaj_v2689.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "dhm": {
+      "code": "dhm",
+      "raw_name": "Zemba",
+      "clean_name": "Zemba",
+      "tag": "<dhm>",
+      "files": [
+        "Zemba_dhm_v471.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ziw": {
+      "code": "ziw",
+      "raw_name": "Zigula",
+      "clean_name": "Zigula",
+      "tag": "<ziw>",
+      "files": [
+        "Zigula_ziw_v1035.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "zin": {
+      "code": "zin",
+      "raw_name": "Zinza",
+      "clean_name": "Zinza",
+      "tag": "<zin>",
+      "files": [
+        "Zinza_zin_v4227.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gnd": {
+      "code": "gnd",
+      "raw_name": "Zulgo-Gemzek",
+      "clean_name": "Zulgo-Gemzek",
+      "tag": "<gnd>",
+      "files": [
+        "Zulgo-Gemzek_gnd_v3153.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "zul": {
+      "code": "zul",
+      "raw_name": "Zulu",
+      "clean_name": "Zulu",
+      "tag": "<zul>",
+      "files": [
+        "Zulu_zul_v286.csv",
+        "Zulu_zul_v3500.csv",
+        "Zulu_zul_v3603.csv",
+        "Zulu_zul_v3846.csv"
+      ],
+      "in_base_vocab": true
+    },
+    "xnj": {
+      "code": "xnj",
+      "raw_name": "kiNgoni",
+      "clean_name": "kiNgoni",
+      "tag": "<xnj>",
+      "files": [
+        "kiNgoni_xnj_v2789.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "gel": {
+      "code": "gel",
+      "raw_name": "ut-Ma’in",
+      "clean_name": "ut-Ma’in",
+      "tag": "<gel>",
+      "files": [
+        "ut-Ma’in_gel_v3989.csv"
+      ],
+      "in_base_vocab": false
+    },
+    "ewe": {
+      "code": "ewe",
+      "raw_name": "Éwé",
+      "clean_name": "Éwé",
+      "tag": "<ewe>",
+      "files": [
+        "Éwé_ewe_v1613.csv",
+        "Éwé_ewe_v2259.csv",
+        "Éwé_ewe_v3306.csv"
+      ],
+      "in_base_vocab": true
+    }
+  }
+}
