@@ -142,3 +142,25 @@ class NounPhraseMarker:
         marked_text = mark_text_with_phrases(text, all_terms)
         found = re.findall(r"<([^<>\n]+)>", marked_text)
         return marked_text, found
+
+
+class BracketPostProcessor:
+    """Utility class for post-translation bracket substitution and stripping."""
+
+    @staticmethod
+    def extract_bracketed_terms(text: str) -> List[str]:
+        return re.findall(r"<([^<>\n]+)>", text)
+
+    @staticmethod
+    def substitute(text: str, replacer) -> str:
+        def _sub(match):
+            term = match.group(1).strip()
+            res = replacer(term)
+            return res if res else term
+
+        return re.sub(r"<([^<>\n]+)>", _sub, text)
+
+    @staticmethod
+    def strip_brackets(text: str) -> str:
+        return re.sub(r"<([^<>\n]+)>", r"\1", text)
+

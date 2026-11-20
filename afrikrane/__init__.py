@@ -3,8 +3,8 @@
 from .registry import LanguageRegistry
 from .lookup import PanAfricanLookup
 from .aligner import AfroAwesomeAligner
-from .extractor import NounPhraseExtractor
-from .marker import BracketPostProcessor
+from .extractor import extract_selective_noun_phrases, get_nlp
+from .marker import NounPhraseMarker, mark_text_with_phrases, BracketPostProcessor
 from .reranker import ContextualReranker
 from .pipeline import AfriKranePipeline
 
@@ -13,7 +13,10 @@ __all__ = [
     "LanguageRegistry",
     "PanAfricanLookup",
     "AfroAwesomeAligner",
-    "NounPhraseExtractor",
+    "extract_selective_noun_phrases",
+    "get_nlp",
+    "NounPhraseMarker",
+    "mark_text_with_phrases",
     "BracketPostProcessor",
     "ContextualReranker",
     "AfriKranePipeline",
