@@ -4,10 +4,12 @@ build_nkrane_dataset_neural.py — Pan-African Dual-Sided Neural Alignment & Nkr
 Implements the official Nkrane-MT Dual-Sided Bracket Contract across 693 African Languages:
 1. Extracts concrete entities & complex nominals (excluding abstract concepts via WordNet).
 2. Uses fine-tuned awesome-align (AfriSpeech/afro-awesome-align) for neural token links.
-3. Projects brackets on BOTH SIDES:
-   - Instruction: "Translate the text to {Language}:  The <president of Ghana> visited the <Ministry of Finance>..."
-   - Response:    "<{tag}> <president of Ghana> no kɔsra <Ministry of Finance> no..."
-4. Caches English nominal extractions in memory (O(1) lookup across all 693 languages).
+3. Projects brackets on BOTH SIDES in linear O(N) token time:
+   - En->Af Input:    "Translate the text to {Lang}:  The <president of Ghana> visited the <Ministry of Finance>..."
+   - En->Af Response: "<{tag}> <president of Ghana> no kɔsra <Ministry of Finance> no..."
+   - Af->En Input:    "Translate the text to English:  <Ghana manpanin> no kɔsra <Sikasɛm Asoeɛ> no..."
+   - Af->En Response: "<eng> The <Ghana manpanin> visited the <Sikasɛm Asoeɛ>..."
+4. Caches English nominal extractions in memory with multi-process nlp.pipe across all 693 languages.
 5. Exports:
    - data/train_bracketed_neural/{code}.parquet
    - data/val_bracketed_neural/{code}.parquet
@@ -42,7 +44,6 @@ sys.path.insert(0, "/mnt/volume_d2wey28/projects/africa-corpus-builder")
 import africa_corpus as ac
 
 from afrikrane.extractor import extract_selective_noun_phrases, get_nlp
-from afrikrane.marker import mark_text_with_phrases
 
 PROJECT_DIR = "/mnt/volume_d2wey28/projects/afrikrane-mt"
 DATA_DIR = os.path.join(PROJECT_DIR, "data")
@@ -80,8 +81,8 @@ ISO_2_TO_3 = {
     "bm": "bam", "kg": "kon", "lu": "lub", "kj": "kua", "ng": "ndo", "kr": "knc"
 }
 
-# Global in-memory cache for parsed English noun phrases
-EN_PHRASE_CACHE: Dict[str, List[str]] = {}
+# Global in-memory cache for parsed English phrases: en_text -> (tokens, phrases, spans)
+EN_PARSE_CACHE: Dict[str, Tuple[List[str], List[str], List[Tuple[int, int, str]]]] = {}
 
 
 def resolve_3letter_code(code: str, name: str) -> str:
@@ -109,15 +110,23 @@ def is_val_key(k: str) -> bool:
     return k.startswith("JHN.1.") or k.startswith("JHN.2.") or k.startswith("JHN.3.") or "#val" in k
 
 
-def get_cached_phrases(en_text: str) -> List[str]:
-    """Retrieves or computes selective concrete noun phrases with caching."""
-    if en_text in EN_PHRASE_CACHE:
-        return EN_PHRASE_CACHE[en_text]
+def populate_en_cache(en_texts: List[str], nlp, n_process: int = 8):
+    """Batch parses uncached English sentences at >1,000 sent/sec using nlp.pipe."""
+    uncached = [t for t in set(en_texts) if t not in EN_PARSE_CACHE]
+    if not uncached:
+        return
 
-    phrases = extract_selective_noun_phrases(en_text)
-    if len(EN_PHRASE_CACHE) < 500000:
-        EN_PHRASE_CACHE[en_text] = phrases
-    return phrases
+    for doc in nlp.pipe(uncached, batch_size=1000, n_process=n_process):
+        text = doc.text
+        tokens = [t.text for t in doc]
+        phrases = extract_selective_noun_phrases(text)
+        spans = []
+        for p in phrases:
+            p_len = len(p.split())
+            for i in range(len(tokens) - p_len + 1):
+                if " ".join(tokens[i:i+p_len]).lower() == p.lower():
+                    spans.append((i, i+p_len, p))
+        EN_PARSE_CACHE[text] = (tokens, phrases, spans)
 
 
 class PeriodicSyncThread(threading.Thread):
@@ -174,10 +183,8 @@ def run_neural_align(model_path: str, pairs: List[Tuple[str, str]], batch_size: 
     out_file = os.path.join(tmp_dir, "output.align")
 
     with open(in_file, "w", encoding="utf-8") as f:
-        for en_text, af_text in pairs:
-            e_tok = " ".join(re.findall(r"\S+", en_text))
-            a_tok = " ".join(re.findall(r"\S+", af_text))
-            f.write(f"{e_tok} ||| {a_tok}\n")
+        for en_tok_str, af_tok_str in pairs:
+            f.write(f"{en_tok_str} ||| {af_tok_str}\n")
 
     cmd = [
         ALIGNER_BIN,
@@ -198,7 +205,7 @@ def run_neural_align(model_path: str, pairs: List[Tuple[str, str]], batch_size: 
     return alignments
 
 
-def process_language(code: str, model_path: str, batch_size: int = 256):
+def process_language(code: str, model_path: str, nlp, batch_size: int = 256):
     info = REGISTRY[code]
     cname = info["clean_name"]
     tag = info["tag"]
@@ -241,21 +248,32 @@ def process_language(code: str, model_path: str, batch_size: int = 256):
     if not all_pairs:
         return code, 0, 0, 0, "No pairs extracted"
 
-    input_pairs = [(e, a) for _, e, a in all_pairs]
+    # 1. Batch populate English phrase cache across all CPU cores
+    en_sentences = [e for _, e, _ in all_pairs]
+    populate_en_cache(en_sentences, nlp, n_process=8)
+
+    # 2. Build aligned pairs with whitespace tokenization
+    input_pairs = []
+    parsed_pairs = []
+    for vk, en_text, af_text in all_pairs:
+        en_toks, phrases, spans = EN_PARSE_CACHE[en_text]
+        af_toks = af_text.split()
+        input_pairs.append((" ".join(en_toks), " ".join(af_toks)))
+        parsed_pairs.append((vk, en_text, af_text, en_toks, af_toks, phrases, spans))
+
+    # 3. GPU Neural Alignment
     align_lines = run_neural_align(model_path, input_pairs, batch_size=batch_size, num_workers=8)
 
+    # 4. Direct linear-time dual-sided projection
     train_rows = []
     val_rows = []
     dict_counts = defaultdict(lambda: defaultdict(int))
 
-    for idx, (vk, en_text, af_text) in enumerate(all_pairs):
+    for idx, (vk, en_text, af_text, en_toks, af_toks, phrases, spans) in enumerate(parsed_pairs):
         is_val = is_val_key(vk)
         target_list = val_rows if is_val else train_rows
 
-        phrases = get_cached_phrases(en_text)
-
-        if not phrases:
-            # If no concrete entities targeted, standard clean translation
+        if not phrases or not spans:
             target_list.append({
                 "instruction": f"Translate the text to {cname}:  {en_text}",
                 "response": f"{tag} {af_text}",
@@ -272,72 +290,94 @@ def process_language(code: str, model_path: str, batch_size: int = 256):
             })
             continue
 
-        # 1. Marked English input
-        marked_en = mark_text_with_phrases(en_text, phrases)
-
-        # 2. Project spans into African text using neural alignment links
-        en_tokens = re.findall(r"\S+", en_text)
-        af_tokens = re.findall(r"\S+", af_text)
         raw_align = align_lines[idx] if idx < len(align_lines) else ""
         links = [tuple(map(int, x.split("-"))) for x in raw_align.split() if "-" in x]
 
         af_rep = {}
-        pair_mappings = []
+        af_rep_rev = {}
+        rev_rep = {}
 
-        for p in phrases:
-            p_words = p.split()
-            # Find token span of phrase p in en_tokens
-            p_start = -1
-            for i in range(len(en_tokens) - len(p_words) + 1):
-                if [re.sub(r"[^\w]", "", w.lower()) for w in en_tokens[i:i+len(p_words)]] == [re.sub(r"[^\w]", "", w.lower()) for w in p_words]:
-                    p_start = i
-                    break
+        for s_start, s_end, p in spans:
+            aligned_tgts = [j for (ei, j) in links if s_start <= ei < s_end and j < len(af_toks)]
+            if aligned_tgts:
+                min_t, max_t = min(aligned_tgts), max(aligned_tgts)
+                target_phrase = " ".join(af_toks[min_t:max_t+1])
+                clean_target = re.sub(r"[^\w\u00C0-\u024F\u1E00-\u1EFF\u0180-\u024FɛɔƐƆ]", "", target_phrase.lower())
+                clean_p = p.lower()
+                if len(clean_target) >= 2:
+                    dict_counts[clean_p][clean_target] += 1
+                for tj in range(min_t, max_t + 1):
+                    af_rep[tj] = f"<{p}>"
+                    af_rep_rev[tj] = f"<{target_phrase}>"
+                for ei in range(s_start, s_end):
+                    rev_rep[ei] = f"<{target_phrase}>"
 
-            if p_start != -1:
-                p_end = p_start + len(p_words)
-                aligned_tgts = [j for (ei, j) in links if p_start <= ei < p_end and j < len(af_tokens)]
-                if aligned_tgts:
-                    min_t, max_t = min(aligned_tgts), max(aligned_tgts)
-                    target_phrase = " ".join(af_tokens[min_t:max_t+1])
-                    clean_target = re.sub(r"[^\w\u00C0-\u024F\u1E00-\u1EFF\u0180-\u024FɛɔƐƆ]", "", target_phrase.lower())
-                    clean_p = p.lower()
-                    if len(clean_target) >= 2:
-                        dict_counts[clean_p][clean_target] += 1
-                        pair_mappings.append((p, target_phrase))
-                    for tj in range(min_t, max_t + 1):
-                        af_rep[tj] = f"<{p}>"
-
-        # Construct marked African output
-        bracketed_af = []
-        skip_until = -1
-        for tj, tok in enumerate(af_tokens):
-            if tj <= skip_until:
+        # 1. Forward English with brackets
+        en_rep_fwd = {i: f"<{p}>" for s, e, p in spans for i in range(s, e)}
+        marked_en_list = []
+        skip = -1
+        for i, tok in enumerate(en_toks):
+            if i <= skip:
                 continue
-            if tj in af_rep:
-                b_str = af_rep[tj]
-                bracketed_af.append(b_str)
-                while tj + 1 in af_rep and af_rep[tj+1] == b_str:
-                    tj += 1
-                skip_until = tj
+            if i in en_rep_fwd:
+                b = en_rep_fwd[i]
+                marked_en_list.append(b)
+                while i + 1 in en_rep_fwd and en_rep_fwd[i+1] == b:
+                    i += 1
+                skip = i
             else:
-                bracketed_af.append(tok)
-        marked_af = " ".join(bracketed_af)
+                marked_en_list.append(tok)
+        marked_en = " ".join(marked_en_list)
 
-        # Reverse direction: af -> en
-        # In af -> en: input is African text with <african_noun>, output is English text with matching <african_noun>
-        marked_af_rev = af_text
-        marked_en_rev = en_text
-        if pair_mappings:
-            af_terms = [af_p for _, af_p in pair_mappings]
-            marked_af_rev = mark_text_with_phrases(af_text, af_terms)
-            en_rep_map = {}
-            for en_p, af_p in pair_mappings:
-                en_rep_map[en_p] = f"<{af_p}>"
-            for en_p, af_b in en_rep_map.items():
-                pattern = re.compile(rf"\b({re.escape(en_p)})\b", re.IGNORECASE)
-                marked_en_rev = pattern.sub(af_b, marked_en_rev)
+        # 2. Forward African with matching brackets
+        marked_af_list = []
+        skip = -1
+        for j, tok in enumerate(af_toks):
+            if j <= skip:
+                continue
+            if j in af_rep:
+                b = af_rep[j]
+                marked_af_list.append(b)
+                while j + 1 in af_rep and af_rep[j+1] == b:
+                    j += 1
+                skip = j
+            else:
+                marked_af_list.append(tok)
+        marked_af = " ".join(marked_af_list)
 
-        # 1. En -> Af (DUAL-SIDED: INPUT HAS BRACKETS, OUTPUT HAS MATCHING BRACKETS)
+        # 3. Reverse African with matching brackets
+        marked_af_rev_list = []
+        skip = -1
+        for j, tok in enumerate(af_toks):
+            if j <= skip:
+                continue
+            if j in af_rep_rev:
+                b = af_rep_rev[j]
+                marked_af_rev_list.append(b)
+                while j + 1 in af_rep_rev and af_rep_rev[j+1] == b:
+                    j += 1
+                skip = j
+            else:
+                marked_af_rev_list.append(tok)
+        marked_af_rev = " ".join(marked_af_rev_list)
+
+        # 4. Reverse English with matching brackets
+        marked_en_rev_list = []
+        skip = -1
+        for i, tok in enumerate(en_toks):
+            if i <= skip:
+                continue
+            if i in rev_rep:
+                b = rev_rep[i]
+                marked_en_rev_list.append(b)
+                while i + 1 in rev_rep and rev_rep[i+1] == b:
+                    i += 1
+                skip = i
+            else:
+                marked_en_rev_list.append(tok)
+        marked_en_rev = " ".join(marked_en_rev_list)
+
+        # Dual-Sided Training Instances
         target_list.append({
             "instruction": f"Translate the text to {cname}:  {marked_en}",
             "response": f"{tag} {marked_af}",
@@ -345,7 +385,6 @@ def process_language(code: str, model_path: str, batch_size: int = 256):
             "direction": "en2af",
             "verse": vk
         })
-        # 2. Af -> En (DUAL-SIDED: INPUT HAS BRACKETS, OUTPUT HAS MATCHING BRACKETS)
         target_list.append({
             "instruction": f"Translate the text to English:  {marked_af_rev}",
             "response": f"<eng> {marked_en_rev}",
@@ -402,12 +441,13 @@ def main():
     if args.hf_repo:
         syncer.start()
 
+    nlp = get_nlp()
     t0 = time.time()
     total_train, total_val, total_dicts, success = 0, 0, 0, 0
 
     for i, code in enumerate(codes, 1):
         c_t0 = time.time()
-        c, n_tr, n_val, n_dict, err = process_language(code, args.model, batch_size=args.batch_size)
+        c, n_tr, n_val, n_dict, err = process_language(code, args.model, nlp, batch_size=args.batch_size)
         if err:
             print(f"[{i:3d}/{len(codes)}] {code}: {err}", flush=True)
         else:
