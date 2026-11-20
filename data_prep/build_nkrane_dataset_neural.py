@@ -43,7 +43,7 @@ except ImportError:
 sys.path.insert(0, "/mnt/volume_d2wey28/projects/africa-corpus-builder")
 import africa_corpus as ac
 
-from afrikrane.extractor import extract_selective_noun_phrases, get_nlp
+from afrikrane.extractor import is_abstract_word, get_nlp
 
 PROJECT_DIR = "/mnt/volume_d2wey28/projects/afrikrane-mt"
 DATA_DIR = os.path.join(PROJECT_DIR, "data")
@@ -111,7 +111,7 @@ def is_val_key(k: str) -> bool:
 
 
 def populate_en_cache(en_texts: List[str], nlp, n_process: int = 8):
-    """Batch parses uncached English sentences at >1,000 sent/sec using nlp.pipe."""
+    """Batch parses uncached English sentences directly from doc stream without re-parsing."""
     uncached = [t for t in set(en_texts) if t not in EN_PARSE_CACHE]
     if not uncached:
         return
@@ -119,13 +119,23 @@ def populate_en_cache(en_texts: List[str], nlp, n_process: int = 8):
     for doc in nlp.pipe(uncached, batch_size=1000, n_process=n_process):
         text = doc.text
         tokens = [t.text for t in doc]
-        phrases = extract_selective_noun_phrases(text)
+        phrases = []
         spans = []
-        for p in phrases:
-            p_len = len(p.split())
-            for i in range(len(tokens) - p_len + 1):
-                if " ".join(tokens[i:i+p_len]).lower() == p.lower():
-                    spans.append((i, i+p_len, p))
+
+        for chunk in doc.noun_chunks:
+            root = chunk.root
+            if is_abstract_word(root.text):
+                continue
+            curr_start = chunk.start
+            curr_end = chunk.end
+            while curr_start < curr_end and doc[curr_start].is_stop and doc[curr_start] != root:
+                curr_start += 1
+            if curr_start < curr_end:
+                phrase = doc[curr_start:curr_end].text.strip()
+                if phrase:
+                    phrases.append(phrase)
+                    spans.append((curr_start, curr_end, phrase))
+
         EN_PARSE_CACHE[text] = (tokens, phrases, spans)
 
 
